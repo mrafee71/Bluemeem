@@ -1,0 +1,56 @@
+/* Navbar */
+.navbar-nav .nav-link {
+    font-weight: 700;
+}
+.navbar-nav .nav-link:hover {
+    color: #005FB3 !important;
+}
+.navbar-brand img {
+    height: 70px;
+}
+.navbar-hover-div {
+    background-color: #005fb300 !important;
+    border: none !important;
+}
+.navbar-hover {
+    background-color: #000000 !important;
+    border: 1px solid #ffffff !important;
+    border-radius: 16px !important;
+    transition: all 0.3s ease !important;
+}
+.navbar-hover:hover {
+    background-color: #005FB3 !important;
+    border-radius: 16px !important;
+}
+.toggle-icon {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Default: show toggle-on, hide toggle-close */
+.toggle-close {
+    display: none;
+}
+
+/* When menu is open (aria-expanded="true"), swap icons */
+.navbar-toggler[aria-expanded="true"] .toggle-on {
+    display: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .toggle-close {
+    display: inline;
+}
+.custom-toggler .toggle-icon {
+    color: #007bff;
+    transition: transform 3s ease;
+}
+.custom-toggler {
+    border-color: transparent;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-toggler:hover .toggle-icon {
+    color: #07478a; /* or your brand color */
+}
+/* Navbar End */
