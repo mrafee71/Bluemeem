@@ -54,3 +54,43 @@
     color: #07478a; /* or your brand color */
 }
 /* Navbar End */
+
+/* Hero Section */
+.hero-slide {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* overlay */
+    z-index: 0;
+    border-radius: inherit; /* match the curvy shape */
+}
+
+.hero-slide .container {
+    position: relative;
+    z-index: 2;
+}
+.hero-wrapper {
+    max-width: 98%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .hero-wrapper {
+        max-width: 95%; /* Give it more width on large screens */
+    }
+
+    #heroCarousel {
+        width: 100%;
+    }
+}
