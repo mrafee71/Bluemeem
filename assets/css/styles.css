@@ -1,3 +1,7 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+}
 /* Navbar */
 .navbar-nav .nav-link {
     font-weight: 700;
@@ -94,3 +98,5 @@
         width: 100%;
     }
 }
+
+/* About Section */
