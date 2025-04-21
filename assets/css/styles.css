@@ -2,6 +2,9 @@ body {
     font-family: 'Poppins', sans-serif;
     margin-top: 100px;
 }
+.invisible {
+    opacity: 0;
+}
 /* Navbar */
 .navbar-nav .nav-link {
     font-weight: 700;
@@ -100,3 +103,6 @@ body {
 }
 
 /* About Section */
+
+
+/* Advantages Section */
