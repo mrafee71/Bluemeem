@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-xl navbar-light bg-white fixed-top">
         <div class="container">
@@ -543,6 +549,14 @@
           document.querySelectorAll("[data-animation]").forEach(el => observer.observe(el));
         });
     </script>
+
+    <!-- preloader js -->
+    <script>
+        window.addEventListener('load', function () {
+            document.getElementById('preloader').style.display = 'none';
+        });
+    </script>
+
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
