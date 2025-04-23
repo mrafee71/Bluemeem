@@ -181,7 +181,7 @@ body {
   }
 }
 
-/* How It Works Section */
+/* Advantages Section */
 .advantages-section {
   background: linear-gradient(135deg, #f8fbff, #e6f0ff);
   transition: all 3s ease;
@@ -202,4 +202,49 @@ body {
 .no-outline:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+/* Footer Section */
+.hover-white:hover {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.glowing-icon {
+  animation: glowing 2.5s infinite alternate;
+}
+.hover-social-linkedin:hover {
+  color: #0077B5!important;
+}
+.hover-social-fb:hover {
+  color: #1877F2!important;
+}
+.hover-social-thre:hover {
+  color: #000!important;
+}
+.hover-social-insta:hover {
+  color: #962fbf!important;
+}
+.hover-social-x:hover {
+  color: #964B00!important;
+}
+
+@keyframes glowing {
+  0% {
+    color: rgb(17, 50, 238);
+  }
+  50% {
+    color: rgb(189, 193, 252);
+  }
+  100% {
+    color: rgb(33, 88, 189);
+  }
+}
+@media (max-width: 576px) {
+  footer .text-white-50 {
+  }
+
+  footer ul {
+    padding-left: 0;
+  }
 }
