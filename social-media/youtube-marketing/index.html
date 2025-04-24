@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluemeem | About</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="../../assets/images/bluemeem_logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <!-- Grid toggle icon (default) -->
+                <svg class="toggle-icon toggle-on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+                    <path d="M10 10H3V4a1 1 0 0 1 1-1h6zm11-6a1 1 0 0 0-1-1h-6v7h7zM4 21h6v-7H3v6a1 1 0 0 0 1 1zm17-1v-6h-7v7h6a1 1 0 0 0 1-1z" fill="currentColor"/>
+                </svg>
+
+                <!-- Close icon (your new SVG) -->
+                <svg class="toggle-icon toggle-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="28" height="28">
+                    <path fill="#007bff" d="M64 128C29.028 128 .576 99.289.576 63.999h4C4.576 97.084 31.233 124 64 124s59.424-26.916 59.424-60.001C123.424 30.916 96.767 4 64 4V0c34.972 0 63.424 28.71 63.424 63.999C127.424 99.289 98.972 128 64 128z"/>
+                    <path fill="#007bff" d="M4.576 63.999h-4c0-.672.01-1.345.031-2.012l3.998.124c-.02.626-.029 1.257-.029 1.888zM4.85 58.2l-3.982-.378c.134-1.413.318-2.841.545-4.244l3.948.641A61.34 61.34 0 0 0 4.85 58.2zm1.286-7.919-3.896-.902c.32-1.384.692-2.775 1.104-4.135l3.828 1.161a60.464 60.464 0 0 0-1.036 3.876zm2.33-7.679-3.741-1.415a64.157 64.157 0 0 1 1.649-3.954l3.639 1.661a60.062 60.062 0 0 0-1.547 3.708zm3.336-7.302-3.519-1.902a64.206 64.206 0 0 1 2.161-3.697l3.385 2.132a60.156 60.156 0 0 0-2.027 3.467zm4.28-6.79-3.234-2.354a64.557 64.557 0 0 1 2.633-3.375l3.07 2.563a60.375 60.375 0 0 0-2.469 3.166zm5.143-6.159-2.892-2.764a64.435 64.435 0 0 1 3.059-2.995l2.7 2.951a60.202 60.202 0 0 0-2.867 2.808zm5.917-5.418-2.498-3.124a63.898 63.898 0 0 1 3.431-2.559l2.282 3.285a59.732 59.732 0 0 0-3.215 2.398zm6.584-4.574L31.67 8.927a64.605 64.605 0 0 1 3.743-2.074l1.819 3.563a59.245 59.245 0 0 0-3.506 1.943zm7.136-3.642-1.571-3.679a63.195 63.195 0 0 1 3.989-1.546l1.318 3.776c-1.255.44-2.513.927-3.736 1.449zm7.565-2.636-1.056-3.858a62.444 62.444 0 0 1 4.168-.988l.789 3.922a57.697 57.697 0 0 0-3.901.924zM56.283 4.5 55.764.534A63.83 63.83 0 0 1 59.91.13l.257 3.992a59.967 59.967 0 0 0-3.884.378zM62.112 4.029 61.988.031C62.655.01 63.328 0 64 0v4c-.631 0-1.262.009-1.888.029z"/>
+                    <path fill="#007bff" d="M79.518 94.626 64 78.965 48.481 94.626 33.657 79.664l15.518-15.663L33.657 48.34 48.48 33.374 64 49.036l15.518-15.662L94.343 48.34 78.825 64.001l15.518 15.663-14.825 14.962zm-40.23-14.962 9.193 9.278L64 73.281l15.518 15.661 9.194-9.278-15.518-15.663L88.712 48.34l-9.194-9.282L64 54.72 48.481 39.058l-9.194 9.282 15.518 15.662-15.517 15.662z"/>
+                </svg>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-2"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item me-2"><a class="nav-link" href="/about/">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle me-2" href="" role="button" data-bs-toggle="dropdown">SEO</a>
+                        <ul class="dropdown-menu bg-dark text-white navbar-hover-div">
+                            <li><a class="dropdown-item text-white navbar-hover" href="/seo/seo-services/">SEO Services</a></li>
+                            <li><a class="dropdown-item text-white navbar-hover" href="/seo/seo-audit/">SEO Audit</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Amazon Services</a>
+                        <ul class="dropdown-menu bg-dark text-white navbar-hover-div">
+                            <li><a class="dropdown-item text-white navbar-hover" href="/amazon-services/product-listing/">Product Listing</a></li>
+                            <li><a class="dropdown-item text-white navbar-hover" href="/amazon-services/amazon-ads/">Amazon Ads</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Development</a>
+                        <ul class="dropdown-menu bg-dark text-white navbar-hover-div">
+                            <li><a class="dropdown-item text-white navbar-hover" href="/development/web-devolopment/">Web Development</a></li>
+                            <li><a class="dropdown-item text-white navbar-hover" href="/development/ecommerce-web/">E-commerce Web Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Social Media</a>
+                        <ul class="dropdown-menu bg-dark text-white navbar-hover-div">
+                            <li><a class="dropdown-item text-white navbar-hover" href="/social-media/marketing/">Marketing</a></li>
+                            <li><a class="dropdown-item text-white navbar-hover" href="/social-media/management/">Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Creative</a>
+                        <ul class="dropdown-menu bg-dark text-white navbar-hover-div">
+                            <li><a class="dropdown-item text-white navbar-hover" href="/creative/graphic-design/">Graphic Design</a></li>
+                            <li><a class="dropdown-item text-white navbar-hover" href="/creative/branding/">Branding</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-2"><a class="nav-link" href="/blogs/">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation Bar End -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mb-0">
+        <div class="container">
+          <!-- Main Footer Content -->
+          <div class="row g-4 mb-4">
+            <!-- Company Info -->
+            <div class="col-lg-3 col-md-6 col-xxl-3">
+              <div>
+                <img src="../../assets/images/bluemeem_logo.png" alt="Meem Logo" class="img-fluid mb-4"
+                  style="max-width: 150px;">
+                <p class="text-white-50" style="width: 90%;">
+                  Empowering Your Digital Vision with Creativity and Innovation in Uae, Qatar & India.
+                </p>
+              </div>
+            </div>
+    
+            <!-- Services -->
+            <div class="col-lg-2 col-md-6 col-xxl-2">
+              <h3 class="h5 mb-4">Main Services</h3>
+              <ul class="list-unstyled">
+                <li class="mb-2 text-white-50">Digital Marketing</li>
+                <li class="mb-2 text-white-50">Web Development</li>
+                <li class="mb-2 text-white-50">Graphic Designing</li>
+              </ul>
+            </div>
+    
+            <!-- Contact Info -->
+            <div class="col-lg-4 col-md-6 col-xxl-4">
+          <h3 class="h5 mb-4">Touch with Us</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3 d-flex">
+              <i class="fas fa-home me-3"></i>
+              <span class="text-white-50">Dubai, Qatar & India</span>
+            </li>
+            <li class="mb-3 d-flex">
+              <i class="fas fa-phone me-3"></i>
+              <span class="text-white-50">+91 9074 91 9005</span>
+            </li>
+            <li class="mb-3 d-flex">
+              <i class="fas fa-phone me-3"></i>
+              <span class="text-white-50">+91 9633 82 7006</span>
+            </li>
+            <li class="mb-3 d-flex">
+              <i class="fas fa-envelope me-3"></i>
+              <span class="text-white-50">info.bluemeem@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+    
+            <!-- Company Profile with Large Download Icon -->
+            <!-- Company Profile with Social Media Links -->
+            <div class="col-lg-3 col-md-6 col-xxl-3">
+              <h3 class="h5 mb-4">Company Profile</h3>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="../../assets/COMPANY PROFILE/BLUEMEEM - COMPANY PROFILE.pdf" download
+                    class="text-white-50 text-decoration-none">
+                    Download <i class="fas fa-download fa-3x ms-4 glowing-icon"></i>
+                  </a>
+                </li>
+                <li class="mt-4" style="max-width: 250px;">
+                  <div class="d-flex g-1">
+                    <!-- Facebook -->
+                    <div class="col-2 mb-2">
+                      <a href="https://www.facebook.com/profile.php?id=61568177747917" target="_blank" class="text-white hover-social-fb">
+                        <i class="fab fa-facebook" style="font-size: 24px;"></i>
+                      </a>
+                    </div>
+                    <!-- Instagram -->
+                    <div class="col-2 mb-2">
+                      <a href="https://www.instagram.com/blue__meem/" target="_blank" class="text-white hover-social-insta">
+                        <i class="fab fa-instagram" style="font-size: 24px;"></i>
+                      </a>
+                    </div>
+                    <!-- Threads -->
+                    <div class="col-2 mb-2">
+                      <a href="https://www.threads.net/@blue__meem" target="_blank" class="text-white hover-social-thre">
+                        <i class="fa-brands fa-threads" style="font-size: 24px;"></i>
+                      </a>
+                    </div>
+                    <!-- X (formerly Twitter) -->
+                    <div class="col-2 mb-2">
+                      <a href="https://www.twitter.com" target="_blank" class="text-white hover-social-x">
+                        <i class="fa-brands fa-x-twitter" style="font-size: 24px;"></i>
+                      </a>
+                    </div>
+                    <!-- LinkedIn -->
+                    <div class="col-2 mb-2">
+                      <a href="https://www.linkedin.com/company/104976344" target="_blank" class="text-white hover-social-linkedin">
+                        <i class="fab fa-linkedin" style="font-size: 24px;"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                
+              </ul>
+            </div>
+    
+          </div>
+    
+          <!-- Footer Bottom -->
+          <div class="border-top pt-4">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <p class="mb-0 text-white-50">
+                  Copyright © 2025 Blue Meem. All Rights Reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const el = entry.target;
+                const animationClasses = el.getAttribute("data-animation").split(" ");
+                el.classList.remove("invisible");
+                el.classList.add("animate__animated", ...animationClasses);
+                observer.unobserve(el); // Stop observing once animated
+              }
+            });
+          }, {
+            threshold: 0.2
+          });
+      
+          document.querySelectorAll("[data-animation]").forEach(el => observer.observe(el));
+        });
+    </script>
+
+    <!-- preloader js -->
+    <script>
+        window.addEventListener('load', function () {
+            document.getElementById('preloader').style.display = 'none';
+        });
+    </script>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
