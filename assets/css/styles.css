@@ -429,10 +429,10 @@ body {
   z-index: -1;
   filter: blur(8px);
   opacity: 0.9;
-  animation: glowing 20s linear infinite;
+  animation: glowing-card 20s linear infinite;
 }
 
-@keyframes glowing {
+@keyframes glowing-card {
   0% {
     background-position: 0% 50%;
   }
