@@ -537,3 +537,46 @@ body {
 .icon-text {
   font-size: 0.5rem;
 }
+
+.feature-card {
+  transition: transform 0.3s ease-in-out;
+  border: none;
+  background: linear-gradient(145deg, #ffffff, #f0f8ff);
+  border-bottom: 2px solid #007bff;
+  border-right: 2px solid #007bff;
+  box-shadow: 5px 5px 18px #c9e4ff,
+  -5px -5px 18px #d3e9ff;
+}
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+.google-ads-icons {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(to bottom, #a3d9ff, #ffffff);
+  color: #ffffff;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+.google-ads-icons i {
+  font-size: 1.8rem;
+  animation: translate-icon 6s linear infinite;
+  transition: transform 0.4s ease;
+}
+@keyframes translate-icon {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(-10px) translateY(-10px);
+  }
+  75% {
+    transform: translateX(10px) translateY(10px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
