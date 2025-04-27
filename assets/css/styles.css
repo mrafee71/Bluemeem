@@ -556,8 +556,8 @@ body {
   background: linear-gradient(145deg, #ffffff, #f0f8ff);
   border-bottom: 2px solid #007bff;
   border-right: 2px solid #007bff;
-  box-shadow: 5px 5px 18px #c9e4ff,
-  -5px -5px 18px #d3e9ff;
+  box-shadow: 1px 1px 28px #c9e4ff,
+  -1px -1px 28px #d3e9ff;
 }
 .feature-card:hover {
   transform: translateY(-8px);
@@ -594,7 +594,7 @@ body {
 }
 
 .what-we-deliver {
-  background: linear-gradient(135deg, #0056b3, #003366);
+  background: linear-gradient(to bottom, #0056b3, #003366);
   padding: 100px 0;
   color: #fff;
   position: relative;
@@ -665,7 +665,7 @@ body {
   fill: #00d4ff;
 }
 
-.card-title {
+.deliver-card-title {
   color: #00d4ff;
   font-weight: 700;
   margin-bottom: 20px;
@@ -699,4 +699,195 @@ body {
 .custom-btn:hover {
   box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
   transform: translateY(-3px);
+}
+
+.why-choose-section {
+  background: linear-gradient(to bottom, #003366, #1a4f98);
+  color: #fff;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: #5db9ff;
+}
+
+.card-custom {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 30px;
+  height: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.card-custom:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #5db9ff;
+}
+
+.whychoose-card-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #5db9ff;
+}
+
+.accent-bg {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: rgba(93, 185, 255, 0.2);
+  filter: blur(80px);
+  z-index: 0;
+}
+
+.accent-bg-1 {
+  top: 9%;
+  right: 10%;
+}
+
+.accent-bg-2 {
+  bottom: 50%;
+  left: 5%;
+}
+
+.cta-btn {
+  background: linear-gradient(135deg, #5db9ff 0%, #2a7fcd 100%);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 0 5px 15px rgba(42, 127, 205, 0.4);
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(42, 127, 205, 0.6);
+  background: linear-gradient(135deg, #6dc2ff 0%, #3b8fdd 100%);
+}
+
+.stats-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #5db9ff;
+  margin-bottom: 10px;
+}
+
+.stats-text {
+  font-weight: 500;
+}
+
+.feature-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+  .why-choose-section {
+      padding: 50px 0;
+  }
+  
+  .section-title {
+      margin-bottom: 30px;
+  }
+  
+  .card-custom {
+      margin-bottom: 20px;
+  }
+}
+
+.services-section {
+  background-color: #ffffff;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #2C3E50;
+}
+
+.subtitle {
+  color: #3498DB;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.step-card {
+  border-radius: 15px;
+  padding: 30px;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: none;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #3498DB, #2980B9);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.step-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2C3E50;
+}
+
+.step-description {
+  color: #7F8C8D;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #3498DB, #2980B9);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-top: 40px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
 }
