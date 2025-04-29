@@ -1054,3 +1054,138 @@ body {
       padding: 30px;
   }
 }
+
+.ppc-service-section {
+  padding: 80px 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.ppc-service-title {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  color: #2c3e50;
+}
+
+.ppc-service-subtitle {
+  color: #3498db;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ppc-service-accent {
+  color: #3498db;
+}
+
+.ppc-service-description {
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.ppc-service-card {
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: all 0.3s ease;
+  border: none;
+  border-top: 3px solid #3498db;
+  border-left: 3px solid #3498db;
+  background: linear-gradient(145deg, #ffffff, #b3dcff);
+}
+
+.ppc-service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(52, 152, 219, 0.15);
+}
+
+.ppc-service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(145deg, #ffffff, #b3dcff);
+  color: #2980b9;
+  font-size: 1.8rem;
+}
+
+.ppc-service-card-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.ppc-service-card-text {
+  color: #7f8c8d;
+}
+
+.ppc-service-why-us {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 3rem;
+  border-radius: 12px;
+}
+
+.ppc-service-stat {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.ppc-service-stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3498db;
+  margin-bottom: 0.5rem;
+}
+
+.ppc-service-stat-label {
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+.ppc-service-cta {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.ppc-service-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+  background: linear-gradient(135deg, #2980b9, #3498db);
+}
+
+.ppc-service-features {
+  margin-top: 3rem;
+}
+
+.ppc-service-feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.ppc-service-feature-icon {
+  color: #3498db;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.ppc-service-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
