@@ -891,3 +891,166 @@ body {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
 }
+
+/* PPC */
+.ppc-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.ppc-section-title {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.ppc-section-title:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #1e88e5, #5e35b1);
+  margin-top: 12px;
+}
+
+.ppc-card {
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  border: none;
+  padding: 30px;
+}
+
+.ppc-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.ppc-card-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #5e35b1, #1e88e5);
+  color: white;
+  font-size: 32px;
+}
+
+.ppc-cta-section {
+  background: linear-gradient(135deg, #5e35b1, #1e88e5);
+  border-radius: 15px;
+  padding: 50px;
+  position: relative;
+  margin-top: 60px;
+}
+
+.ppc-cta-section:before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #5e35b1, #1e88e5);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.ppc-cta-section:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #5e35b1, #1e88e5);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.ppc-cta-button {
+  background: white;
+  color: #5e35b1;
+  border: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.ppc-cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.ppc-stats-counter {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #5e35b1;
+  margin-bottom: 10px;
+}
+
+.ppc-stats-text {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.ppc-highlight-text {
+  background: linear-gradient(90deg, #1e88e5, #5e35b1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.ppc-testimonial-card {
+  border-radius: 15px;
+  background: #f8f9fa;
+  padding: 30px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.ppc-testimonial-card:before {
+  content: '"';
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  font-size: 100px;
+  color: rgba(94, 53, 177, 0.2);
+  font-family: serif;
+  line-height: 1;
+}
+
+.ppc-client-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.ppc-client-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .ppc-section {
+      padding: 50px 0;
+  }
+  
+  .ppc-cta-section {
+      padding: 30px;
+  }
+}
