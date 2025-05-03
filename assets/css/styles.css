@@ -1189,3 +1189,145 @@ body {
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
+
+/* PPC-Client-Approach */
+.ppc-client-benefits-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.ppc-client-section-heading {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.ppc-client-section-heading h2 {
+  font-weight: 700;
+  color: #2c3e50;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.ppc-client-section-heading h2:after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #2ecc71);
+  bottom: -10px;
+  left: 15%;
+  border-radius: 2px;
+}
+
+.ppc-client-section-heading p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ppc-client-benefit-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 4px solid transparent;
+}
+
+.ppc-client-benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  border-bottom: 4px solid #3498db;
+}
+
+.ppc-client-benefit-card .ppc-client-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  color: white;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.ppc-client-benefit-card .ppc-client-icon-wrapper:after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px dashed #3498db;
+  top: -5px;
+  left: -5px;
+  animation: ppc-client-spin 15s linear infinite;
+}
+
+@keyframes ppc-client-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.ppc-client-benefit-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.ppc-client-benefit-card p {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.ppc-client-cta-container {
+  margin-top: 60px;
+}
+
+.ppc-client-btn-gradient {
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  border: none;
+  color: white;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(46, 204, 113, 0.2);
+}
+
+.ppc-client-btn-gradient:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(46, 204, 113, 0.4);
+  background: linear-gradient(135deg, #2ecc71, #3498db);
+  color: white;
+}
+
+.ppc-client-highlight {
+  color: #3498db;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .ppc-client-benefits-section {
+      padding: 50px 0;
+  }
+  
+  .ppc-client-section-heading {
+      margin-bottom: 40px;
+  }
+  
+  .ppc-client-benefit-card {
+      margin-bottom: 25px;
+  }
+}
