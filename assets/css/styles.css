@@ -7,6 +7,30 @@ body {
     opacity: 0;
 }
 
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  background-color: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  font-size: 30px;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+
 /* Preloader Styles */
 #preloader {
   position: fixed;
