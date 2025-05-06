@@ -2473,3 +2473,371 @@ body {
       margin-bottom: 20px;
   }
 }
+
+/* Mobile app development */
+.mobile-dev-section {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.mobile-dev-bg-dots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(#0d235f 1.25px, transparent 1px);
+  background-size: 30px 30px;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.mobile-dev-heading {
+  color: #1e3a8a;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.mobile-dev-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: #0bdaf5;
+  border-radius: 2px;
+}
+
+.mobile-dev-subheading {
+  color: #3b82f6;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.mobile-dev-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.mobile-dev-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.mobile-dev-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #0bdaf5;
+  z-index: 2;
+}
+
+.mobile-dev-icon {
+  font-size: 48px;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.mobile-dev-card-title {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.mobile-dev-card-desc {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.mobile-dev-why-us {
+  background: #1e3a8a;
+  color: white;
+  border-radius: 15px;
+  padding: 40px;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-dev-why-us::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+  transform: rotate(45deg);
+}
+
+.mobile-dev-why-title {
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.mobile-dev-why-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #0bdaf5;
+}
+
+.mobile-dev-why-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.mobile-dev-why-icon {
+  margin-right: 15px;
+  font-size: 24px;
+  color: #0bdaf5;
+}
+
+.mobile-dev-why-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.mobile-dev-why-text p {
+  font-size: 14px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.mobile-dev-services {
+  padding-top: 60px;
+}
+
+.mobile-dev-service-box {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-left: 4px solid #3b82f6;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.mobile-dev-service-box:hover {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.mobile-dev-service-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 48px;
+  font-weight: 700;
+  color: rgba(30, 58, 138, 0.05);
+}
+
+.mobile-dev-service-title {
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.mobile-dev-service-desc {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .mobile-dev-section {
+      padding: 60px 0;
+  }
+  
+  .mobile-dev-why-us {
+      margin-top: 0;
+      margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-dev-section {
+      padding: 40px 0;
+  }
+  
+  .mobile-dev-card,
+  .mobile-dev-why-us,
+  .mobile-dev-service-box {
+      padding: 20px;
+  }
+}
+
+.mobiledev-process-container {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.mobiledev-process-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.mobiledev-process-step {
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  min-height: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mobiledev-process-step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mobiledev-process-step-1 {
+  border: 2px solid rgba(26, 188, 205, 0.3);
+}
+
+.mobiledev-process-step-2 {
+  border: 2px solid rgba(143, 99, 232, 0.3);
+}
+
+.mobiledev-process-step-3 {
+  border: 2px solid rgba(188, 97, 223, 0.3);
+}
+
+.mobiledev-process-step-4 {
+  border: 2px solid rgba(90, 120, 230, 0.3);
+}
+
+.mobiledev-process-step-5 {
+  border: 2px solid rgba(57, 217, 169, 0.3);
+}
+
+.mobiledev-process-icon-wrapper {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.mobiledev-process-icon-1 {
+  border: 2px solid #1abccd;
+}
+
+.mobiledev-process-icon-2 {
+  border: 2px solid #8f63e8;
+}
+
+.mobiledev-process-icon-3 {
+  border: 2px solid #bc61df;
+}
+
+.mobiledev-process-icon-4 {
+  border: 2px solid #5a78e6;
+}
+
+.mobiledev-process-icon-5 {
+  border: 2px solid #39d9a9;
+}
+
+.mobiledev-process-icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.mobiledev-process-icon-bg-1 {
+  background: linear-gradient(135deg, #1abccd, #39d9a9);
+}
+
+.mobiledev-process-icon-bg-2 {
+  background: linear-gradient(135deg, #8f63e8, #5a78e6);
+}
+
+.mobiledev-process-icon-bg-3 {
+  background: linear-gradient(135deg, #bc61df, #9b6ee8);
+}
+
+.mobiledev-process-icon-bg-4 {
+  background: linear-gradient(135deg, #5a78e6, #8f63e8);
+}
+
+.mobiledev-process-icon-bg-5 {
+  background: linear-gradient(135deg, #39d9a9, #1abccd);
+}
+
+.mobiledev-process-step-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  color: #333;
+  text-align: center;
+}
+
+.mobiledev-process-step-text {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.mobiledev-process-subtitle {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 991px) {
+  .mobiledev-process-step {
+      margin-bottom: 60px;
+  }
+  
+  .mobiledev-process-row > div:last-child .mobiledev-process-step {
+      margin-bottom: 10px;
+  }
+}
