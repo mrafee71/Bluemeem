@@ -2694,7 +2694,6 @@ body {
 
 .mobiledev-process-container {
   padding: 80px 0;
-  background-color: #f8f9fa;
 }
 
 .mobiledev-process-title {
@@ -2839,5 +2838,218 @@ body {
   
   .mobiledev-process-row > div:last-child .mobiledev-process-step {
       margin-bottom: 10px;
+  }
+}
+
+/* Social Media marketing */
+.socialmedia-benefits-section {
+  background-color: #fff;
+}
+
+.socialmedia-benefits-title {
+  color: #3b5998;
+  position: relative;
+}
+
+.socialmedia-benefits-divider {
+  height: 4px;
+  width: 80px;
+  background: linear-gradient(to right, #3b5998, #8a3ab9);
+  border-radius: 2px;
+}
+
+.socialmedia-benefits-subtitle {
+  color: #555;
+}
+
+/* Card & Content Styling */
+.socialmedia-benefits-content {
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 5px solid #3b5998;
+  background-color: #f8f9fa;
+}
+
+.socialmedia-benefits-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.socialmedia-benefits-item-title {
+  color: #3b5998;
+  font-weight: 600;
+}
+
+.socialmedia-benefits-item-text {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Icon Styling */
+.socialmedia-benefits-icon-wrapper {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b5998, #8a3ab9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.socialmedia-benefits-icon-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  top: -25%;
+  left: -25%;
+  animation: socialmedia-benefits-shine 3s infinite linear;
+}
+
+.socialmedia-benefits-icon {
+  font-size: 100px;
+  color: white;
+}
+
+/* Progress Bar */
+.socialmedia-benefits-progress {
+  margin-top: 15px;
+}
+
+.socialmedia-benefits-progress-bar {
+  background: linear-gradient(to right, #3b5998, #8a3ab9);
+  height: 8px;
+  border-radius: 4px;
+  animation: socialmedia-benefits-progressAnimation 1.5s ease-in-out;
+}
+
+.progress {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+}
+
+/* Carousel Controls */
+.socialmedia-benefits-navigation {
+  position: relative;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.socialmedia-benefits-control {
+  background-color: #3b5998;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 1;
+  top: auto;
+  bottom: 0;
+  position: absolute;
+}
+
+.socialmedia-benefits-control:hover {
+  background-color: #8a3ab9;
+  opacity: 1;
+}
+
+.socialmedia-benefits-control-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.socialmedia-benefits-indicators {
+  position: relative;
+  bottom: -10px;
+  margin-top: 20px;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+}
+
+.carousel-indicators button.active {
+  background-color: #3b5998;
+}
+
+/* Custom Animations */
+@keyframes socialmedia-benefits-shine {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  20% {
+    left: 100%;
+    opacity: 0.3;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes socialmedia-benefits-progressAnimation {
+  0% {
+    width: 0%;
+  }
+}
+
+/* Add pulse animation to icons */
+.carousel-item.active .socialmedia-benefits-icon {
+  animation: socialmedia-benefits-pulse 2s infinite;
+}
+
+@keyframes socialmedia-benefits-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Float animation for the content box */
+.carousel-item.active .socialmedia-benefits-content {
+  animation: socialmedia-benefits-float 6s ease-in-out infinite;
+}
+
+@keyframes socialmedia-benefits-float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .socialmedia-benefits-icon-wrapper {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  
+  .socialmedia-benefits-icon {
+    font-size: 70px;
+  }
+  
+  .socialmedia-benefits-content {
+    text-align: center;
   }
 }
