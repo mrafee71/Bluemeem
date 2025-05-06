@@ -2847,14 +2847,13 @@ body {
 }
 
 .socialmedia-benefits-title {
-  color: #3b5998;
   position: relative;
 }
 
 .socialmedia-benefits-divider {
   height: 4px;
   width: 80px;
-  background: linear-gradient(to right, #3b5998, #8a3ab9);
+  background: linear-gradient(to right, #2f5fc9, #111595);
   border-radius: 2px;
 }
 
@@ -2867,7 +2866,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border-left: 5px solid #3b5998;
+  border-left: 5px solid #214797;
   background-color: #f8f9fa;
 }
 
@@ -2877,7 +2876,7 @@ body {
 }
 
 .socialmedia-benefits-item-title {
-  color: #3b5998;
+  color: #214dab;
   font-weight: 600;
 }
 
@@ -2892,7 +2891,7 @@ body {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #3b5998, #8a3ab9);
+  background: linear-gradient(135deg, #3b5998, #0d1380);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2923,7 +2922,7 @@ body {
 }
 
 .socialmedia-benefits-progress-bar {
-  background: linear-gradient(to right, #3b5998, #8a3ab9);
+  background: linear-gradient(to right, #4968ac, #102a88);
   height: 8px;
   border-radius: 4px;
   animation: socialmedia-benefits-progressAnimation 1.5s ease-in-out;
@@ -2954,7 +2953,7 @@ body {
 }
 
 .socialmedia-benefits-control:hover {
-  background-color: #8a3ab9;
+  background-color: #3a4db9;
   opacity: 1;
 }
 
@@ -3051,5 +3050,451 @@ body {
   
   .socialmedia-benefits-content {
     text-align: center;
+  }
+}
+
+.socialmedia-about-underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #4968ac, #102a88);
+  border-radius: 4px;
+}
+
+.socialmedia-about-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.socialmedia-about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.socialmedia-about-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #056baf, #46a5c5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.socialmedia-about-card:hover .socialmedia-about-icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.socialmedia-about-icon-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+  animation: socialmedia-about-pulse 2s infinite;
+}
+
+.socialmedia-about-icon {
+  color: white;
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.socialmedia-about-hover-effect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(135deg, #056baf, #46a5c5);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.socialmedia-about-card:hover .socialmedia-about-hover-effect {
+  transform: scaleX(1);
+}
+
+.socialmedia-about-cta-box {
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(26, 158, 188, 0.1));
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.socialmedia-about-cta-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+  animation: socialmedia-about-rotate 15s linear infinite;
+  z-index: 0;
+}
+
+.socialmedia-about-cta-box h3, 
+.socialmedia-about-cta-box p, 
+.socialmedia-about-cta-box button {
+  position: relative;
+  z-index: 2;
+}
+
+.socialmedia-about-cta-btn {
+  background: linear-gradient(135deg, #094975, #46a5c5);
+  border: none;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.socialmedia-about-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(26, 161, 188, 0.3);
+  color: white;
+}
+
+.socialmedia-about-cta-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.3), rgba(255,255,255,0.1));
+  transition: left 0.7s ease;
+  z-index: -1;
+}
+
+.socialmedia-about-cta-btn:hover::before {
+  left: 100%;
+}
+
+/* Custom animations */
+@keyframes socialmedia-about-pulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes socialmedia-about-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Make cards appear one by one with delay for each column */
+.row > div:nth-child(1) .socialmedia-about-card {
+  animation-delay: 0.1s;
+}
+
+.row > div:nth-child(2) .socialmedia-about-card {
+  animation-delay: 0.2s;
+}
+
+.row > div:nth-child(3) .socialmedia-about-card {
+  animation-delay: 0.3s;
+}
+
+.socialmedia-platforms-section {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.socialmedia-platforms-highlight {
+  color: #4e61d8;
+  position: relative;
+}
+
+.socialmedia-platforms-underline {
+  height: 4px;
+  width: 80px;
+  background: linear-gradient(90deg, #4e61d8, #6c43e0);
+  margin-top: 20px;
+  border-radius: 2px;
+}
+
+.socialmedia-platforms-card {
+  transition: all 0.4s ease;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.socialmedia-platforms-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.socialmedia-platforms-icon-wrapper {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.facebook-bg {
+  background: linear-gradient(135deg, #3b5998, #1877f2);
+}
+
+.instagram-bg {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.twitter-bg {
+  background: linear-gradient(135deg, #1da1f2, #0f84c7);
+}
+
+.linkedin-bg {
+  background: linear-gradient(135deg, #0077b5, #0a66c2);
+}
+
+.pinterest-bg {
+  background: linear-gradient(135deg, #e60023, #bd081c);
+}
+
+.socialmedia-platforms-hover-content {
+  opacity: 0;
+  transition: all 0.4s ease;
+  transform: translateY(20px);
+}
+
+.socialmedia-platforms-card:hover .socialmedia-platforms-hover-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.socialmedia-platforms-card:hover .socialmedia-platforms-icon-wrapper {
+  height: 80px;
+}
+
+.socialmedia-platforms-card .fas.fa-check-circle {
+  color: #4e61d8;
+  margin-right: 5px;
+}
+
+.socialmedia-platforms-btn {
+  background: linear-gradient(45deg, #4e61d8, #6c43e0);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.socialmedia-platforms-btn:hover {
+  background: linear-gradient(45deg, #6c43e0, #4e61d8);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(78, 97, 216, 0.2);
+}
+
+.socialmedia-platforms-cta {
+  background: linear-gradient(135deg, #f9f9f9, #f1f1f1);
+  border-radius: 15px;
+}
+
+.socialmedia-platforms-counter {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #4e61d8;
+  margin-bottom: 5px;
+  display: inline-block;
+  position: relative;
+}
+
+.socialmedia-platforms-counter::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(90deg, #4e61d8, #6c43e0);
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.socialmedia-platforms-counter-label {
+  font-weight: 600;
+  color: #555;
+}
+
+.socialmedia-platforms-stats {
+  position: relative;
+}
+
+.socialmedia-platforms-stats::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(78, 97, 216, 0.2), transparent);
+}
+
+@media (max-width: 768px) {
+  .socialmedia-platforms-counter {
+    font-size: 2.5rem;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.socialmedia-platforms-card:nth-child(odd) {
+  animation: float 6s ease-in-out infinite;
+}
+
+.socialmedia-platforms-card:nth-child(even) {
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.socialmedia-process-section {
+  overflow: hidden;
+  position: relative;
+}
+
+.socialmedia-process-divider {
+  height: 4px;
+  width: 80px;
+  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  border-radius: 2px;
+}
+
+.socialmedia-process-card {
+  transition: all 0.4s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transform: translateY(0);
+}
+
+.socialmedia-process-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.socialmedia-process-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.socialmedia-process-icon-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0dcaf0, #0d6efd);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.socialmedia-process-card:hover .socialmedia-process-icon-wrapper::before {
+  opacity: 1;
+}
+
+.socialmedia-process-icon {
+  font-size: 28px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.socialmedia-process-card-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 0;
+}
+
+.socialmedia-process-card-overlay span {
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgba(13, 110, 253, 0.05);
+  line-height: 1;
+}
+
+.socialmedia-process-cta {
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.05), rgba(13, 202, 240, 0.05));
+  border: 1px solid rgba(13, 110, 253, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.socialmedia-process-btn {
+  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  border: none;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.socialmedia-process-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2);
+}
+
+.socialmedia-process-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: all 0.6s ease;
+}
+
+.socialmedia-process-btn:hover::before {
+  left: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .socialmedia-process-card-overlay span {
+    font-size: 3rem;
   }
 }
