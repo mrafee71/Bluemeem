@@ -3984,7 +3984,7 @@ body {
 .insta-affordable-shape-1 {
   width: 300px;
   height: 300px;
-  background: linear-gradient(45deg, #405DE6, #5851DB);
+  background: linear-gradient(45deg, #FD1D1D, #F56040);
   top: 2%;
   left: -10%;
 }
@@ -3992,7 +3992,7 @@ body {
 .insta-affordable-shape-2 {
   width: 150px;
   height: 150px;
-  background: linear-gradient(45deg, #FD1D1D, #F56040);
+  background: linear-gradient(45deg, #405DE6, #5851DB);
   top: 45%;
   right: -5%;
 }
@@ -4490,7 +4490,7 @@ body {
   color: #6f42c1;
 }
 .bg-purple {
-  background-color: #6f42c1;
+  background-color: #D3C6EC;
 }
 
 /* Hover effect for cards */
