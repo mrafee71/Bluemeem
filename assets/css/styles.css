@@ -4236,152 +4236,146 @@ body {
   }
 }
 
-
-.mobiledev-process-container {
-  padding: 80px 0;
-}
-
-.mobiledev-process-title {
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
-.mobiledev-process-step {
-  position: relative;
-  background: white;
-  border-radius: 20px;
-  padding: 30px 25px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  min-height: 200px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.mobiledev-process-step:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.mobiledev-process-step-1 {
-  border: 2px solid rgba(26, 188, 205, 0.3);
-}
-
-.mobiledev-process-step-2 {
-  border: 2px solid rgba(143, 99, 232, 0.3);
-}
-
-.mobiledev-process-step-3 {
-  border: 2px solid rgba(188, 97, 223, 0.3);
-}
-
-.mobiledev-process-step-4 {
-  border: 2px solid rgba(90, 120, 230, 0.3);
-}
-
-.mobiledev-process-step-5 {
-  border: 2px solid rgba(57, 217, 169, 0.3);
-}
-
-.mobiledev-process-icon-wrapper {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  top: -35px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  background: white;
-}
-
-.mobiledev-process-icon-1 {
-  border: 2px solid #1abccd;
-}
-
-.mobiledev-process-icon-2 {
-  border: 2px solid #8f63e8;
-}
-
-.mobiledev-process-icon-3 {
-  border: 2px solid #bc61df;
-}
-
-.mobiledev-process-icon-4 {
-  border: 2px solid #5a78e6;
-}
-
-.mobiledev-process-icon-5 {
-  border: 2px solid #39d9a9;
-}
-
-.mobiledev-process-icon {
-  width: 30px;
-  height: 30px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 16px;
-}
-
-.mobiledev-process-icon-bg-1 {
-  background: linear-gradient(135deg, #1abccd, #39d9a9);
-}
-
-.mobiledev-process-icon-bg-2 {
-  background: linear-gradient(135deg, #8f63e8, #5a78e6);
-}
-
-.mobiledev-process-icon-bg-3 {
-  background: linear-gradient(135deg, #bc61df, #9b6ee8);
-}
-
-.mobiledev-process-icon-bg-4 {
-  background: linear-gradient(135deg, #5a78e6, #8f63e8);
-}
-
-.mobiledev-process-icon-bg-5 {
-  background: linear-gradient(135deg, #39d9a9, #1abccd);
-}
-
-.mobiledev-process-step-title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 12px;
+.facebook-choose-container {
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  padding: 50px 0;
   color: #333;
+}
+.facebook-choose-title {
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #1877f2;
+}
+.facebook-choose-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  height: 100%;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+}
+.facebook-choose-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+.facebook-choose-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #4267B2;
+}
+.facebook-choose-card-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #3a4db9;
+}
+.facebook-choose-conclusion {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+  border-left: 4px solid #1877f2;
+}
+
+.facebook-ads-type-container {
+  padding: 80px 0;
+  background: linear-gradient(to bottom, #ffffff, #dce9ff, #ffffff);
+}
+
+.facebook-ads-type-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.mobiledev-process-step-text {
-  font-size: 14px;
-  color: #555;
-  text-align: center;
-  line-height: 1.6;
-}
-
-.mobiledev-process-subtitle {
+.facebook-ads-type-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 50px;
-  color: #666;
-  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.facebook-ads-type-row {
+  margin-top: 30px;
+}
+
+.facebook-ads-type-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.facebook-ads-type-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.facebook-ads-type-icon-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.facebook-ads-type-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.facebook-ads-type-icon i {
+  font-size: 32px;
+  color: #fff;
+}
+
+/* Different background colors for icons */
+.facebook-ads-type-icon-bg-1 { background: linear-gradient(135deg, #4267B2, #3b5998); }
+.facebook-ads-type-icon-bg-2 { background: linear-gradient(135deg, #6E48AA, #9C27B0); }
+.facebook-ads-type-icon-bg-3 { background: linear-gradient(135deg, #2196F3, #03A9F4); }
+.facebook-ads-type-icon-bg-4 { background: linear-gradient(135deg, #F44336, #E91E63); }
+.facebook-ads-type-icon-bg-5 { background: linear-gradient(135deg, #4CAF50, #8BC34A); }
+.facebook-ads-type-icon-bg-6 { background: linear-gradient(135deg, #FF9800, #FFC107); }
+.facebook-ads-type-icon-bg-7 { background: linear-gradient(135deg, #795548, #9E9E9E); }
+.facebook-ads-type-icon-bg-8 { background: linear-gradient(135deg, #607D8B, #455A64); }
+.facebook-ads-type-icon-bg-9 { background: linear-gradient(135deg, #4267B2, #3b5998); }
+
+.facebook-ads-type-item-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.facebook-ads-type-item-text {
+  color: #666;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+/* Animation delays for staggered effect */
+.facebook-ads-type-item-1 { animation-delay: 0.1s; }
+.facebook-ads-type-item-2 { animation-delay: 0.2s; }
+.facebook-ads-type-item-3 { animation-delay: 0.3s; }
+.facebook-ads-type-item-4 { animation-delay: 0.4s; }
+.facebook-ads-type-item-5 { animation-delay: 0.5s; }
+.facebook-ads-type-item-6 { animation-delay: 0.6s; }
+.facebook-ads-type-item-7 { animation-delay: 0.7s; }
+.facebook-ads-type-item-8 { animation-delay: 0.8s; }
+.facebook-ads-type-item-9 { animation-delay: 0.9s; }
+
+/* Responsive adjustments */
 @media (max-width: 991px) {
-  .mobiledev-process-step {
-      margin-bottom: 60px;
-  }
-  
-  .mobiledev-process-row > div:last-child .mobiledev-process-step {
-      margin-bottom: 10px;
+  .facebook-ads-type-item {
+      margin-bottom: 20px;
   }
 }
