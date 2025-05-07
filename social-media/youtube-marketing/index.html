@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bluemeem | About</title>
+    <title>Bluemeem | Mobile App Development</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,73 +25,517 @@
     </div>
     
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-xl navbar-light bg-white fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="../../assets/images/bluemeem_logo.png" alt="Logo">
-            </a>
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+      <div class="container">
+          <a class="navbar-brand" href="/">
+              <img src="../../assets/images/bluemeem_logo.png" alt="Logo">
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <!-- Home -->
+                  <li class="nav-item">
+                      <a class="nav-link" href="/">Home</a>
+                  </li>
+                  
+                  <!-- About -->
+                  <li class="nav-item">
+                      <a class="nav-link" href="/about">About</a>
+                  </li>
+                  
+                  <!-- SEO -->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="seoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          SEO
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="seoDropdown">
+                          <li><a class="dropdown-item" href="/seo/seo-service/">SEO Service</a></li>
+                          <li class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="#" id="paidAdsDropdown">
+                                  Paid Advertisement
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="/seo/paid-ads/google-ads/">Google Ads</a></li>
+                                  <li><a class="dropdown-item" href="/seo/paid-ads/ppc/">PPC</a></li>
+                                  <li><a class="dropdown-item" href="/seo/paid-ads/search-engine-marketing/">Search Engine Marketing</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+                  
+                  <!-- Development -->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="developmentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Development
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="developmentDropdown">
+                          <li><a class="dropdown-item" href="/development/web-development/">Web Development</a></li>
+                          <li><a class="dropdown-item" href="/development/ecommerce-web/">E-commerce Web Development</a></li>
+                      </ul>
+                  </li>
+                  
+                  <!-- Social Media -->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="socialMediaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Social Media
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="socialMediaDropdown">
+                          <li><a class="dropdown-item" href="/social-media/social-media-marketing/">Social Media Marketing</a></li>
+                          <li><a class="dropdown-item" href="/social-media/instagram-marketing/">Instagram Marketing</a></li>
+                          <li><a class="dropdown-item" href="/social-media/facebook-marketing/">Facebook Marketing</a></li>
+                          <li><a class="dropdown-item" href="/social-media/youtube-marketing/">Youtube Marketing</a></li>
+                      </ul>
+                  </li>
+                  
+                  <!-- Creative -->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="creativeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Creative
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="creativeDropdown">
+                          <li><a class="dropdown-item" href="/creative/graphic-design/">Graphic Design</a></li>
+                          <li><a class="dropdown-item" href="/creative/company-profile-designing/">Company Profile Designing</a></li>
+                          <li><a class="dropdown-item" href="/creative/content-writing/">Content Writing</a></li>
+                      </ul>
+                  </li>
+                  
+                  <!-- Blogs -->
+                  <li class="nav-item">
+                      <a class="nav-link" href="/blogs/">Blogs</a>
+                  </li>
 
-                <!-- Grid toggle icon (default) -->
-                <svg class="toggle-icon toggle-on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
-                    <path d="M10 10H3V4a1 1 0 0 1 1-1h6zm11-6a1 1 0 0 0-1-1h-6v7h7zM4 21h6v-7H3v6a1 1 0 0 0 1 1zm17-1v-6h-7v7h6a1 1 0 0 0 1-1z" fill="currentColor"/>
-                </svg>
-
-                <!-- Close icon (your new SVG) -->
-                <svg class="toggle-icon toggle-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="28" height="28">
-                    <path fill="#007bff" d="M64 128C29.028 128 .576 99.289.576 63.999h4C4.576 97.084 31.233 124 64 124s59.424-26.916 59.424-60.001C123.424 30.916 96.767 4 64 4V0c34.972 0 63.424 28.71 63.424 63.999C127.424 99.289 98.972 128 64 128z"/>
-                    <path fill="#007bff" d="M4.576 63.999h-4c0-.672.01-1.345.031-2.012l3.998.124c-.02.626-.029 1.257-.029 1.888zM4.85 58.2l-3.982-.378c.134-1.413.318-2.841.545-4.244l3.948.641A61.34 61.34 0 0 0 4.85 58.2zm1.286-7.919-3.896-.902c.32-1.384.692-2.775 1.104-4.135l3.828 1.161a60.464 60.464 0 0 0-1.036 3.876zm2.33-7.679-3.741-1.415a64.157 64.157 0 0 1 1.649-3.954l3.639 1.661a60.062 60.062 0 0 0-1.547 3.708zm3.336-7.302-3.519-1.902a64.206 64.206 0 0 1 2.161-3.697l3.385 2.132a60.156 60.156 0 0 0-2.027 3.467zm4.28-6.79-3.234-2.354a64.557 64.557 0 0 1 2.633-3.375l3.07 2.563a60.375 60.375 0 0 0-2.469 3.166zm5.143-6.159-2.892-2.764a64.435 64.435 0 0 1 3.059-2.995l2.7 2.951a60.202 60.202 0 0 0-2.867 2.808zm5.917-5.418-2.498-3.124a63.898 63.898 0 0 1 3.431-2.559l2.282 3.285a59.732 59.732 0 0 0-3.215 2.398zm6.584-4.574L31.67 8.927a64.605 64.605 0 0 1 3.743-2.074l1.819 3.563a59.245 59.245 0 0 0-3.506 1.943zm7.136-3.642-1.571-3.679a63.195 63.195 0 0 1 3.989-1.546l1.318 3.776c-1.255.44-2.513.927-3.736 1.449zm7.565-2.636-1.056-3.858a62.444 62.444 0 0 1 4.168-.988l.789 3.922a57.697 57.697 0 0 0-3.901.924zM56.283 4.5 55.764.534A63.83 63.83 0 0 1 59.91.13l.257 3.992a59.967 59.967 0 0 0-3.884.378zM62.112 4.029 61.988.031C62.655.01 63.328 0 64 0v4c-.631 0-1.262.009-1.888.029z"/>
-                    <path fill="#007bff" d="M79.518 94.626 64 78.965 48.481 94.626 33.657 79.664l15.518-15.663L33.657 48.34 48.48 33.374 64 49.036l15.518-15.662L94.343 48.34 78.825 64.001l15.518 15.663-14.825 14.962zm-40.23-14.962 9.193 9.278L64 73.281l15.518 15.661 9.194-9.278-15.518-15.663L88.712 48.34l-9.194-9.282L64 54.72 48.481 39.058l-9.194 9.282 15.518 15.662-15.517 15.662z"/>
-                </svg>
-
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item me-2"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item me-2"><a class="nav-link" href="/about/">About</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle me-2" href="" role="button" data-bs-toggle="dropdown">SEO</a>
-                        <ul class="dropdown-menu bg-dark text-white navbar-hover-div">
-                            <li><a class="dropdown-item text-white navbar-hover" href="/seo/seo-services/">SEO Services</a></li>
-                            <li><a class="dropdown-item text-white navbar-hover" href="/seo/seo-audit/">SEO Audit</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown me-2">
-                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Amazon Services</a>
-                        <ul class="dropdown-menu bg-dark text-white navbar-hover-div">
-                            <li><a class="dropdown-item text-white navbar-hover" href="/amazon-services/product-listing/">Product Listing</a></li>
-                            <li><a class="dropdown-item text-white navbar-hover" href="/amazon-services/amazon-ads/">Amazon Ads</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown me-2">
-                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Development</a>
-                        <ul class="dropdown-menu bg-dark text-white navbar-hover-div">
-                            <li><a class="dropdown-item text-white navbar-hover" href="/development/web-devolopment/">Web Development</a></li>
-                            <li><a class="dropdown-item text-white navbar-hover" href="/development/ecommerce-web/">E-commerce Web Development</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown me-2">
-                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Social Media</a>
-                        <ul class="dropdown-menu bg-dark text-white navbar-hover-div">
-                            <li><a class="dropdown-item text-white navbar-hover" href="/social-media/marketing/">Marketing</a></li>
-                            <li><a class="dropdown-item text-white navbar-hover" href="/social-media/management/">Management</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown me-2">
-                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Creative</a>
-                        <ul class="dropdown-menu bg-dark text-white navbar-hover-div">
-                            <li><a class="dropdown-item text-white navbar-hover" href="/creative/graphic-design/">Graphic Design</a></li>
-                            <li><a class="dropdown-item text-white navbar-hover" href="/creative/branding/">Branding</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item me-2"><a class="nav-link" href="/blogs/">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+                  <!-- Careers -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/careers/">Careers</a>
+                  </li>
+                  
+                  <!-- Contact -->
+                  <li class="nav-item">
+                      <a class="nav-link" href="/contact/">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
     </nav>
     <!-- Navigation Bar End -->
+
+    <!-- Page Header Start -->
+    <section class="py-5" style="background: linear-gradient(to bottom, #ffffff,#dce9ff,#ffffff);">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Text Section -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h1 class="display-5 text-primary fw-bold invisible" data-animation="animate__fadeInUp">Mobile App Development Company</h1>
+            <p class="lead text-muted invisible" data-animation="animate__fadeInUp">
+              Transform your ideas into reality with our expert mobile app development services. We create user-friendly, high-performance apps tailored to your business needs, ensuring a seamless experience for your users.
+            </p>
+            <a href="/contact/" class="btn btn-dark btn-lg rounded-pill px-4 py-3 mt-3 invisible" data-animation="animate__fadeInUp">
+              Contact Us ➜
+            </a>
+          </div>
+    
+          <!-- Right Image Section -->
+          <div class="col-lg-6 mb-4 mb-lg-0 text-center about-hero-img invisible" data-animation="animate__zoomIn">
+            <img src="../../assets/images/mobile-dev-hero.png" alt="Bluemeem Consultant" class="img-fluid" style="max-height: 500px;">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Page Header End -->
+
+    <!-- About Mobile App Development Section Start -->
+    <section class="google-ads-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image or Visual -->
+          <div class="col-lg-6 mb-4 mb-lg-0 text-center invisible" data-animation="animate__fadeInLeft">
+            <img src="../../assets/images/mobile-dev-about.png" class="img-fluid rounded shadow" alt="Mobile App Development illustration" width="90%">
+          </div>
+          <!-- Content Area -->
+          <div class="col-lg-6 mb-4 mb-lg-0 invisible" data-animation="animate__fadeInRight">
+            <h2 class="mb-3 fw-bold text-primary">What is Mobile App Development?</h2>
+            <p class="lead text-muted">
+              Mobile app development is the process of crafting intuitive, high-performance apps for Android and iOS that engage users and elevate brands. From sleek UI designs to seamless backend integration, every aspect is engineered for usability, performance, and scalability.
+            </p>
+            <ul class="list-unstyled mt-4">
+              <li class="mb-2">
+                <i class="fas fa-check-circle text-success me-2"></i>Custom-built apps tailored to your business goals and audience
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-check-circle text-success me-2"></i>Responsive and adaptive UI for phones, tablets, and foldables
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-check-circle text-success me-2"></i>Optimized performance with native and cross-platform technologies
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-check-circle text-success me-2"></i>Robust integrations with APIs, cloud services, and secure payment systems
+              </li>
+            </ul>
+            <a href="/contact/" class="btn btn-primary rounded-pill mt-4 px-4 py-2">Build Your Mobile App</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Mobile App Development Section End -->
+
+    <!-- Mobile App Development Services Section Start -->
+    <section class="py-5">
+      <div class="container py-0 py-lg-5">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold display-5 text-primary invisible" data-animation="animate__fadeInDown">
+            Cutting-Edge Mobile App Development Services
+          </h2>
+          <p class="lead text-muted invisible" data-animation="animate__fadeInUp">
+            Our mobile app development solutions are designed to deliver performance, innovation, and user-centric experiences for startups and enterprises across the UAE.
+          </p>
+        </div>
+        <div class="row g-4">
+          <!-- Custom Mobile App Development -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 custom-card invisible" data-animation="animate__fadeInUp">
+              <div class="card-body text-center">
+                <div class="icon-placeholder mb-3">
+                  <i class="fas fa-mobile-alt fa-2x text-white"></i>
+                </div>
+                <h5 class="card-title fw-bold">Custom Mobile App Development</h5>
+                <p class="card-text text-muted">
+                  Bespoke mobile applications tailored to your business goals and customer needs across all industries.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Cross-Platform App Development -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 custom-card invisible" data-animation="animate__fadeInUp">
+              <div class="card-body text-center">
+                <div class="icon-placeholder mb-3">
+                  <i class="fas fa-code fa-2x text-white"></i>
+                </div>
+                <h5 class="card-title fw-bold">Cross-Platform App Development</h5>
+                <p class="card-text text-muted">
+                  Build apps for both iOS and Android using a single codebase to save time and maximize reach.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- UI/UX Design for Mobile -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 custom-card invisible" data-animation="animate__fadeInUp">
+              <div class="card-body text-center">
+                <div class="icon-placeholder mb-3">
+                  <i class="fas fa-pencil-ruler fa-2x text-white"></i>
+                </div>
+                <h5 class="card-title fw-bold">Mobile UI/UX Design</h5>
+                <p class="card-text text-muted">
+                  Stunning and intuitive mobile interfaces that provide seamless user journeys and high engagement.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- App Testing and QA -->
+          <div class="col-md-6 col-lg-6">
+            <div class="card h-100 shadow-sm border-0 custom-card invisible" data-animation="animate__fadeInUp">
+              <div class="card-body text-center">
+                <div class="icon-placeholder mb-3">
+                  <i class="fas fa-bug fa-2x text-white"></i>
+                </div>
+                <h5 class="card-title fw-bold">App Testing & Quality Assurance</h5>
+                <p class="card-text text-muted">
+                  Ensure your app is secure, stable, and ready for launch with comprehensive testing services.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- App Store Deployment & Optimization -->
+          <div class="col-md-6 col-lg-6">
+            <div class="card h-100 shadow-sm border-0 custom-card invisible" data-animation="animate__fadeInUp">
+              <div class="card-body text-center">
+                <div class="icon-placeholder mb-3">
+                  <i class="fas fa-cloud-upload-alt fa-2x text-white"></i>
+                </div>
+                <h5 class="card-title fw-bold">App Store Deployment & Optimization</h5>
+                <p class="card-text text-muted">
+                  Launch your app with confidence using expert deployment and store optimization techniques for maximum visibility.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mobile App Development Services Section End -->
+
+    <!-- Main Section -->
+    <section class="mobile-dev-section" style="background: linear-gradient(to bottom, #ffffff,#dce9ff,#ffffff);">
+      <div class="mobile-dev-bg-dots"></div>
+      <div class="container">
+          <div class="row justify-content-center mb-5">
+              <div class="col-lg-8 text-center">
+                  <h2 class="mobile-dev-heading text-center" data-animation="animate__fadeInUp">Benefits of Mobile App Development for UAE Businesses</h2>
+                  <p class="mobile-dev-subheading text-center" data-animation="animate__fadeInUp animate__delay-1s">Empowering UAE businesses with innovative mobile solutions tailored to your specific needs</p>
+              </div>
+          </div>
+          
+          <div class="row">
+              <!-- Development Types -->
+              <div class="col-lg-4 col-md-6 mb-4" data-animation="animate__fadeInLeft">
+                  <div class="mobile-dev-card">
+                      <div class="mobile-dev-icon">
+                          <i class="fab fa-android"></i>
+                      </div>
+                      <h3 class="mobile-dev-card-title">Android Development</h3>
+                      <p class="mobile-dev-card-desc">
+                          We focus on developing custom Android applications customized to the specific requirements of our clients, leveraging the latest technologies and best practices to deliver high-performance, scalable solutions.
+                      </p>
+                  </div>
+              </div>
+              
+              <div class="col-lg-4 col-md-6 mb-4" data-animation="animate__fadeInUp">
+                  <div class="mobile-dev-card">
+                      <div class="mobile-dev-icon">
+                          <i class="fab fa-apple"></i>
+                      </div>
+                      <h3 class="mobile-dev-card-title">iOS Development</h3>
+                      <p class="mobile-dev-card-desc">
+                          Our iOS development services include the design, development, and deployment of native iOS applications that are enhanced for performance, usability, and user experience on Apple devices.
+                      </p>
+                  </div>
+              </div>
+              
+              <div class="col-lg-4 col-md-6 mb-4" data-animation="animate__fadeInRight">
+                  <div class="mobile-dev-card">
+                      <div class="mobile-dev-icon">
+                          <i class="fas fa-code"></i>
+                      </div>
+                      <h3 class="mobile-dev-card-title">Hybrid Development</h3>
+                      <p class="mobile-dev-card-desc">
+                          We offer hybrid app development services in UAE, using frameworks like React Native and Flutter to build cross-platform applications that run seamlessly throughout multiple platforms, includes iOS and Android.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="row mt-4">
+              <!-- Why Choose Us Section -->
+              <div class="col-lg-5" data-animation="animate__fadeInLeft">
+                  <div class="mobile-dev-why-us">
+                      <h3 class="mobile-dev-why-title">Why Bluemeem for Mobile App Development</h3>
+                      
+                      <div class="mobile-dev-why-item">
+                          <div class="mobile-dev-why-icon">
+                              <i class="fas fa-star"></i>
+                          </div>
+                          <div class="mobile-dev-why-text">
+                              <h4>Expertise and Experience</h4>
+                              <p>With years of experience and a proven track record of success, Digital Links Pro offers exceptional expertise in mobile app development, ensuring the delivery of top-quality solutions.</p>
+                          </div>
+                      </div>
+                      
+                      <div class="mobile-dev-why-item">
+                          <div class="mobile-dev-why-icon">
+                              <i class="fas fa-tools"></i>
+                          </div>
+                          <div class="mobile-dev-why-text">
+                              <h4>Customized Solutions</h4>
+                              <p>We take a personalized approach to mobile app development, tailoring our services to meet the specific needs and requirements of each client.</p>
+                          </div>
+                      </div>
+                      
+                      <div class="mobile-dev-why-item">
+                          <div class="mobile-dev-why-icon">
+                              <i class="fas fa-comments"></i>
+                          </div>
+                          <div class="mobile-dev-why-text">
+                              <h4>Transparency and Communication</h4>
+                              <p>We believe in transparency and open communication, keeping clients informed and involved throughout the development process.</p>
+                          </div>
+                      </div>
+                      
+                      <div class="mobile-dev-why-item">
+                          <div class="mobile-dev-why-icon">
+                              <i class="fas fa-trophy"></i>
+                          </div>
+                          <div class="mobile-dev-why-text">
+                              <h4>Commitment to Excellence</h4>
+                              <p>At Digital Links Pro, we're committed to excellence in everything we do, from the quality of our work to the level of service we provide.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Services Section -->
+              <div class="col-lg-7">
+                  <div class="mobile-dev-services">
+                      <h3 class="mobile-dev-heading" data-animation="animate__fadeInRight">Mobile App Development</h3>
+                      <p class="mb-4" data-animation="animate__fadeInRight">Bluemeem offers comprehensive mobile app development services in UAE, together with</p>
+                      
+                      <div class="row">
+                          <div class="col-md-6" data-animation="animate__fadeInUp">
+                              <div class="mobile-dev-service-box">
+                                  <div class="mobile-dev-service-number">01</div>
+                                  <h4 class="mobile-dev-service-title">Cross-Platform App Development</h4>
+                                  <p class="mobile-dev-service-desc">
+                                      We specialize in developing cross-platform applications that run seamlessly across multiple devices and platforms, maximizing reach and accessibility.
+                                  </p>
+                              </div>
+                          </div>
+                          
+                          <div class="col-md-6" data-animation="animate__fadeInUp">
+                              <div class="mobile-dev-service-box">
+                                  <div class="mobile-dev-service-number">02</div>
+                                  <h4 class="mobile-dev-service-title">UI/UX Design</h4>
+                                  <p class="mobile-dev-service-desc">
+                                      Our team of designers creates intuitive and visually appealing user interfaces (UI) and user experiences (UX) that enhance usability, engagement, and satisfaction.
+                                  </p>
+                              </div>
+                          </div>
+                          
+                          <div class="col-md-6" data-animation="animate__fadeInUp">
+                              <div class="mobile-dev-service-box">
+                                  <div class="mobile-dev-service-number">03</div>
+                                  <h4 class="mobile-dev-service-title">App Development Strategy</h4>
+                                  <p class="mobile-dev-service-desc">
+                                      We develop strategic mobile application development plans in UAE tailored to our user's business targets, ensuring alignment with their goals and requirements.
+                                  </p>
+                              </div>
+                          </div>
+                          
+                          <div class="col-md-6" data-animation="animate__fadeInUp">
+                              <div class="mobile-dev-service-box">
+                                  <div class="mobile-dev-service-number">04</div>
+                                  <h4 class="mobile-dev-service-title">App Maintenance and Support</h4>
+                                  <p class="mobile-dev-service-desc">
+                                      We provide ongoing maintenance and support services to ensure the continued success and performance of our clients' mobile applications, addressing any issues or updates as needed.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- Main Section End -->
+
+    <!-- Mobile-dev-process Section -->
+    <section class="mobiledev-process-container">
+      <div class="container">
+          <h2 class="mobiledev-process-title text-primary" data-animation="animate__fadeInUp">Mobile App Development Process</h2>
+          <p class="mobiledev-process-subtitle text-muted" data-animation="animate__fadeInUp">Our process for mobile app development in UAE is structured and collaborative, ensuring the successful delivery of high-quality mobile solutions. It encompasses the following steps:</p>
+          
+          <div class="row mobiledev-process-row position-relative">
+              <!-- Step 1: Consultation -->
+              <div class="col-lg mb-5 mb-lg-0">
+                  <div class="mobiledev-process-step mobiledev-process-step-1" data-animation="animate__fadeInLeft">
+                      <div class="mobiledev-process-icon-wrapper mobiledev-process-icon-1">
+                          <div class="mobiledev-process-icon mobiledev-process-icon-bg-1">
+                              <i class="fas fa-comments"></i>
+                          </div>
+                      </div>
+                      <h3 class="mobiledev-process-step-title">Consultation</h3>
+                      <p class="mobiledev-process-step-text">We begin by understanding the client's business goals, target audience, and requirements, conducting in-depth consultations to accumulate insights and define project objectives.</p>
+                  </div>
+              </div>
+              
+              <!-- Step 2: Design -->
+              <div class="col-lg mb-5 mb-lg-0">
+                  <div class="mobiledev-process-step mobiledev-process-step-2" data-animation="animate__fadeInUp">
+                      <div class="mobiledev-process-icon-wrapper mobiledev-process-icon-2">
+                          <div class="mobiledev-process-icon mobiledev-process-icon-bg-2">
+                              <i class="fas fa-pencil-alt"></i>
+                          </div>
+                      </div>
+                      <h3 class="mobiledev-process-step-title">Design</h3>
+                      <p class="mobiledev-process-step-text">Our team of designers creates wireframes and prototypes, mapping out the app's user interface (UI) and user experience (UX) design to ensure optimal usability and engagement.</p>
+                  </div>
+              </div>
+              
+              <!-- Step 3: Development -->
+              <div class="col-lg mb-5 mb-lg-0">
+                  <div class="mobiledev-process-step mobiledev-process-step-3" data-animation="animate__fadeInUp">
+                      <div class="mobiledev-process-icon-wrapper mobiledev-process-icon-3">
+                          <div class="mobiledev-process-icon mobiledev-process-icon-bg-3">
+                              <i class="fas fa-code"></i>
+                          </div>
+                      </div>
+                      <h3 class="mobiledev-process-step-title">Development</h3>
+                      <p class="mobiledev-process-step-text">Our professional developers bring the design ideas to life, writing clean, efficient code and integrating features and functionalities to build a fully functional mobile application.</p>
+                  </div>
+              </div>
+              
+              <!-- Step 4: Testing -->
+              <div class="col-lg mb-5 mb-lg-0">
+                  <div class="mobiledev-process-step mobiledev-process-step-4" data-animation="animate__fadeInUp">
+                      <div class="mobiledev-process-icon-wrapper mobiledev-process-icon-4">
+                          <div class="mobiledev-process-icon mobiledev-process-icon-bg-4">
+                              <i class="fas fa-vial"></i>
+                          </div>
+                      </div>
+                      <h3 class="mobiledev-process-step-title">Testing</h3>
+                      <p class="mobiledev-process-step-text">We conduct rigorous testing and quality assurance (QA) processes to identify and resolve any bugs, glitches, or performance problems, ensuring that the app meets the highest standards of quality and reliability.</p>
+                  </div>
+              </div>
+              
+              <!-- Step 5: Delivery -->
+              <div class="col-lg">
+                  <div class="mobiledev-process-step mobiledev-process-step-5" data-animation="animate__fadeInRight">
+                      <div class="mobiledev-process-icon-wrapper mobiledev-process-icon-5">
+                          <div class="mobiledev-process-icon mobiledev-process-icon-bg-5">
+                              <i class="fas fa-rocket"></i>
+                          </div>
+                      </div>
+                      <h3 class="mobiledev-process-step-title">Delivery</h3>
+                      <p class="mobiledev-process-step-text">Upon successful testing, we deploy the app to the relevant app stores (Google Play Store, Apple App Store) or distribute it through enterprise channels, making it available to users for download and installation.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- Mobile-dev-process Section End -->
+
+    <!-- Contact Us Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="card shadow-lg border-0 rounded-4 p-4 p-lg-5 bg-white" data-animation="fadeInUp">
+          <div class="row align-items-center">
+            <!-- Contact Info -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <h3 class="fw-bold text-dark mb-3">Let’s Talk About Your Project</h3>
+              <p class="text-secondary fs-5">
+                Ready to take your digital presence to the next level? Reach out and let's collaborate to build something amazing. Whether you're starting fresh or scaling up, we’re here to help!
+              </p>
+              <ul class="list-unstyled text-secondary mt-4">
+                <li class="mb-2"><strong>Email:</strong> info.bluemeem@gmail.com</li>
+                <li class="mb-2"><strong>Phone:</strong> +91 9074 91 9005</li>
+                <li><strong>Location:</strong> Dubai, Qatar & India</li>
+              </ul>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-6">
+              <form action="https://formsubmit.co/info.bluemeem@gmail.com" method="POST">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control rounded-pill" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" class="form-control rounded-pill" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea class="form-control rounded-4" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us Section End -->
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-5 mb-0">
@@ -207,6 +651,100 @@
     </footer>
     <!-- Footer End -->
 
+
+    <!-- Whatsapp Icon -->
+    <a href="https://wa.me/919074919005" target="_blank" class="whatsapp-float animate__animated animate__pulse animate__infinite">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          // For both click and hover functionality
+          const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+          
+          // Handle submenu dropdowns (specifically for Paid Advertisement)
+          const submenuLinks = document.querySelectorAll('.dropdown-submenu > a.dropdown-toggle');
+          
+          submenuLinks.forEach(link => {
+              // Click event for all devices
+              link.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  
+                  const submenu = this.nextElementSibling;
+                  const isOpen = submenu.classList.contains('show');
+                  
+                  // Close all submenus first
+                  document.querySelectorAll('.dropdown-submenu > .dropdown-menu').forEach(menu => {
+                      menu.classList.remove('show');
+                  });
+                  
+                  // Toggle current submenu
+                  if (!isOpen) {
+                      submenu.classList.add('show');
+                  }
+              });
+          });
+          
+          // Handle main dropdown menus for mobile
+          if (isTouchDevice) {
+              const mainDropdowns = document.querySelectorAll('.navbar-nav > .dropdown > .dropdown-toggle');
+              
+              mainDropdowns.forEach(dropdown => {
+                  dropdown.addEventListener('click', function(e) {
+                      if (window.innerWidth >= 992) {
+                          // For tablets and touch laptops in desktop view
+                          const hasClicked = this.getAttribute('data-clicked') === 'true';
+                          
+                          if (!hasClicked) {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              
+                              // Reset all dropdowns
+                              mainDropdowns.forEach(d => d.setAttribute('data-clicked', 'false'));
+                              
+                              // Mark this dropdown as clicked
+                              this.setAttribute('data-clicked', 'true');
+                          }
+                      }
+                  });
+              });
+              
+              // Reset clicked state when clicking elsewhere
+              document.addEventListener('click', function(e) {
+                  if (!e.target.closest('.dropdown')) {
+                      document.querySelectorAll('.dropdown-toggle').forEach(dropdown => {
+                          dropdown.setAttribute('data-clicked', 'false');
+                      });
+                  }
+              });
+          }
+          
+          // Close submenus when main dropdown is closed
+          document.querySelectorAll('.navbar-nav > .dropdown').forEach(dropdown => {
+              dropdown.addEventListener('hidden.bs.dropdown', function() {
+                  this.querySelectorAll('.dropdown-submenu > .dropdown-menu').forEach(submenu => {
+                      submenu.classList.remove('show');
+                  });
+                  
+                  // Reset clicked state
+                  this.querySelector('.dropdown-toggle').setAttribute('data-clicked', 'false');
+              });
+          });
+          
+          // Reset classes on window resize
+          window.addEventListener('resize', function() {
+              if (window.innerWidth >= 992) {
+                  document.querySelectorAll('.dropdown-submenu > .dropdown-menu.show').forEach(menu => {
+                      if (!menu.parentElement.querySelector('a').matches(':hover')) {
+                          menu.classList.remove('show');
+                      }
+                  });
+              }
+          });
+      });
+    </script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
