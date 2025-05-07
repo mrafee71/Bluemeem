@@ -3990,21 +3990,12 @@ body {
 }
 
 .insta-affordable-shape-2 {
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(45deg, #833AB4, #C13584);
-  bottom: 15%;
-  right: 15%;
-}
-
-.insta-affordable-shape-3 {
   width: 150px;
   height: 150px;
   background: linear-gradient(45deg, #FD1D1D, #F56040);
-  top: 20%;
+  top: 45%;
   right: -5%;
 }
-
 .insta-affordable-content {
   position: relative;
   z-index: 2;
@@ -4222,4 +4213,309 @@ body {
     width: 40px;
     height: 40px;
   }
+}
+
+.insta-ads-container {
+  background: #ffffff;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 6rem 0;
+}
+
+/* Background Elements */
+.insta-ads-bg-element {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.insta-ads-bg-element:nth-child(1) {
+  background: linear-gradient(45deg, #fd1d1d, #833ab4);
+  top: 10%;
+  left: -10%;
+}
+
+.insta-ads-bg-element:nth-child(2) {
+  background: linear-gradient(45deg, #fcb045, #fd1d1d);
+}
+
+.insta-ads-bg-element:nth-child(3) {
+  background: linear-gradient(45deg, #405de6, #5851db);
+  bottom: 10%;
+  right: 40%;
+}
+
+/* Title Styles */
+.insta-ads-title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  position: relative;
+  padding-bottom: 1.5rem;
+  margin-bottom: 4rem;
+  background: linear-gradient(to right, #fd1d1d, #fcb045, #405de6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.insta-ads-title-decoration {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 80px;
+  background: linear-gradient(to right, #fd1d1d, #fcb045);
+  border-radius: 2px;
+}
+
+/* Card Styles */
+.insta-ads-card {
+  border: none;
+  border-radius: 16px;
+  transition: all 0.4s ease;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.insta-ads-card:hover {
+  transform: translateY(-10px);
+}
+
+.insta-ads-card:hover .insta-ads-card-inner {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  transform: rotateX(10deg) rotateY(10deg);
+}
+
+.insta-ads-card-inner {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  height: 100%;
+  position: relative;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.insta-ads-card-number {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  font-weight: 900;
+  opacity: 0.1;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.insta-ads-card:hover .insta-ads-card-number {
+  opacity: 0.2;
+  transform: scale(1.1);
+}
+
+.insta-ads-card-body {
+  position: relative;
+  z-index: 2;
+}
+
+.insta-ads-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.insta-ads-card-text {
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.insta-ads-card-icon {
+  position: absolute;
+  bottom: -25px;
+  right: -25px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+  transform: scale(0.8);
+}
+
+.insta-ads-card:hover .insta-ads-card-icon {
+  transform: scale(1);
+  opacity: 0.6;
+}
+
+/* Custom Card Icons */
+.insta-ads-icon-visibility::before,
+.insta-ads-icon-engagement::before,
+.insta-ads-icon-traffic::before,
+.insta-ads-icon-explore::before,
+.insta-ads-icon-conversion::before,
+.insta-ads-icon-carousel::before,
+.insta-ads-icon-story::before,
+.insta-ads-icon-shopping::before,
+.insta-ads-icon-lead::before,
+.insta-ads-icon-dynamic::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.insta-ads-icon-visibility::before { content: "👁️"; font-size: 32px; }
+.insta-ads-icon-engagement::before { content: "❤️"; font-size: 32px; }
+.insta-ads-icon-traffic::before { content: "🔄"; font-size: 32px; }
+.insta-ads-icon-explore::before { content: "🔍"; font-size: 32px; }
+.insta-ads-icon-conversion::before { content: "🛒"; font-size: 32px; }
+.insta-ads-icon-carousel::before { content: "📱"; font-size: 32px; }
+.insta-ads-icon-story::before { content: "📖"; font-size: 32px; }
+.insta-ads-icon-shopping::before { content: "🛍️"; font-size: 32px; }
+.insta-ads-icon-lead::before { content: "📋"; font-size: 32px; }
+.insta-ads-icon-dynamic::before { content: "🎯"; font-size: 32px; }
+
+/* Floating Elements */
+.insta-ads-floating-element {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.insta-ads-floating-1 {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(45deg, #405de6, #5851db);
+  opacity: 0.05;
+  top: 10%;
+  left: 10%;
+}
+
+.insta-ads-floating-2 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, #fd1d1d, #e1306c);
+  opacity: 0.05;
+  bottom: 15%;
+  right: 5%;
+}
+
+.insta-ads-floating-3 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, #fcb045, #fd1d1d);
+  opacity: 0.05;
+  top: 40%;
+  right: 20%;
+}
+
+/* Media Queries */
+@media (max-width: 991.98px) {
+  .insta-ads-title {
+    font-size: 2.5rem;
+  }
+  
+  .insta-ads-card-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .insta-ads-title {
+    font-size: 2rem;
+  }
+  
+  .insta-ads-container {
+    padding: 4rem 0;
+  }
+  
+  .insta-ads-card-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Add some hover animation effects */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.insta-ads-card:hover .insta-ads-card-inner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, 
+    rgba(253, 29, 29, 0.03) 0%, 
+    rgba(252, 176, 69, 0.03) 50%, 
+    rgba(64, 93, 230, 0.03) 100%);
+  z-index: 1;
+  border-radius: 16px;
+  animation: gradientShift 5s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.text-purple {
+  color: #6f42c1;
+}
+.bg-purple {
+  background-color: #6f42c1;
+}
+
+/* Hover effect for cards */
+.hover-shadow-lg {
+  transition: all 0.3s ease;
+}
+.hover-shadow-lg:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+/* Gradient background */
+.bg-gradient-primary {
+  background: linear-gradient(145deg, #0d6efd, #0dcaf0);
+}
+
+/* Transition for all elements */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Animation delay classes */
+.animate__delay-1s {
+  animation-delay: 0.3s;
+}
+.animate__delay-2s {
+  animation-delay: 0.6s;
 }
