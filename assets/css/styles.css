@@ -5494,278 +5494,606 @@ body {
 
 /* Contact Page Styles */
 .bluemeem-contact-hero {
-  background: linear-gradient(135deg, #2563eb, #1e40af);
-  padding: 150px 0 100px;
-  color: white;
+  background: linear-gradient(135deg, #0058b3, #6dd5ed);
+  color: #fff;
+  padding: 100px 0 80px;
   position: relative;
   overflow: hidden;
 }
 
+/* Creating geometric shapes in the background */
 .bluemeem-contact-hero::before {
-  content: "";
+  content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('../assets/images/pattern-dots.png');
-  opacity: 0.1;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: -100px;
+  right: -100px;
+}
+
+.bluemeem-contact-hero::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  bottom: -50px;
+  left: -50px;
 }
 
 .bluemeem-contact-hero h1 {
-  font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bluemeem-contact-hero .lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bluemeem-contact-hero {
+      padding: 80px 0 60px;
+  }
+  
+  .bluemeem-contact-hero h1 {
+      font-size: 2.5rem;
+  }
+  
+  .bluemeem-contact-hero .lead {
+      font-size: 1.1rem;
+      max-width: 90%;
+  }
+}
+
+/* Animation delay utility classes */
+.animate__delay-1s {
+  animation-delay: 0.5s;
+}
+
+.bluemeem-contact-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
 .bluemeem-contact-form {
   background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   padding: 40px;
-  margin-top: -80px;
   position: relative;
-  z-index: 10;
+  overflow: hidden;
+}
+
+.bluemeem-contact-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #4361ee, #4895ef);
 }
 
 .bluemeem-contact-form h3 {
-  color: #2563eb;
-  margin-bottom: 25px;
+  color: #212529;
+  margin-bottom: 30px;
+  font-weight: 700;
   position: relative;
   padding-bottom: 15px;
 }
 
-.bluemeem-contact-form h3:after {
+.bluemeem-contact-form h3::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 60px;
   height: 3px;
-  background: #2563eb;
+  background-color: #4895ef;
 }
 
-.bluemeem-contact-input {
-  border: 1px solid #e5e7eb;
-  padding: 12px 20px;
-  border-radius: 8px;
-  transition: all 0.3s;
-  margin-bottom: 20px;
-}
-
-.bluemeem-contact-input:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
-}
-
-.bluemeem-contact-btn {
-  background: #2563eb;
-  color: white;
-  padding: 12px 30px;
-  border-radius: 8px;
-  border: none;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-.bluemeem-contact-btn:hover {
-  background: #1e40af;
-  transform: translateY(-2px);
-}
-
-.bluemeem-contact-info-card {
-  background-color: white;
-  border-radius: 10px;
-  padding: 30px 25px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
-  margin-bottom: 25px;
-  transition: all 0.3s;
-  height: 100%;
-}
-
-.bluemeem-contact-info-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.bluemeem-contact-info-icon {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ebf4ff;
-  color: #2563eb;
-  border-radius: 50%;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.bluemeem-contact-map-container {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
-  height: 450px;
-}
-
-.bluemeem-contact-faq {
-  background-color: #f8fafc;
-  padding: 80px 0;
-}
-
-.bluemeem-contact-faq h2 {
-  color: #1e40af;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.bluemeem-contact-accordion .accordion-item {
-  border: none;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.bluemeem-contact-accordion .accordion-button {
-  background-color: white;
-  color: #1e293b;
-  font-weight: 600;
-  padding: 20px 25px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.bluemeem-contact-accordion .accordion-button:not(.collapsed) {
-  background-color: #2563eb;
-  color: white;
-}
-
-.bluemeem-contact-accordion .accordion-body {
-  padding: 20px 25px;
-  background-color: white;
-}
-
-.bluemeem-contact-cta {
-  background: linear-gradient(135deg, #2563eb, #1e40af);
-  padding: 80px 0;
-  color: white;
-  text-align: center;
-}
-
-.bluemeem-contact-cta h2 {
-  margin-bottom: 20px;
-}
-
-.bluemeem-contact-cta-btn {
-  background-color: white;
-  color: #2563eb;
-  border: none;
-  padding: 15px 35px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 18px;
-  transition: all 0.3s;
-  margin-top: 20px;
-}
-
-.bluemeem-contact-cta-btn:hover {
-  background-color: #f8fafc;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.bluemeem-contact-office-card {
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
-  margin-bottom: 30px;
-  transition: all 0.3s;
-}
-
-.bluemeem-contact-office-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-.bluemeem-contact-office-image {
-  height: 200px;
-  overflow: hidden;
-}
-
-.bluemeem-contact-office-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 0.5s;
-}
-
-.bluemeem-contact-office-card:hover .bluemeem-contact-office-image img {
-  transform: scale(1.1);
-}
-
-.bluemeem-contact-office-details {
-  padding: 25px;
-}
-
-.bluemeem-contact-office-details h4 {
-  color: #1e40af;
-  margin-bottom: 15px;
-}
-
-/* Floating labels for form */
 .bluemeem-contact-form-floating {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .bluemeem-contact-form-floating input,
-.bluemeem-contact-form-floating textarea,
-.bluemeem-contact-form-floating select {
-  height: auto;
-  padding: 15px 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.bluemeem-contact-form-floating select,
+.bluemeem-contact-form-floating textarea {
   width: 100%;
-  font-size: 16px;
-}
-
-.bluemeem-contact-form-floating input:focus,
-.bluemeem-contact-form-floating textarea:focus,
-.bluemeem-contact-form-floating select:focus {
-  outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
-}
-
-.bluemeem-contact-form-floating label {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
+  padding: 15px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 7px;
   background-color: white;
-  padding: 0 5px;
-  color: #6b7280;
-  transition: all 0.2s;
-  pointer-events: none;
-}
-
-.bluemeem-contact-form-floating textarea ~ label {
-  top: 25px;
-}
-
-.bluemeem-contact-form-floating input:focus ~ label,
-.bluemeem-contact-form-floating textarea:focus ~ label,
-.bluemeem-contact-form-floating select:focus ~ label,
-.bluemeem-contact-form-floating input:not(:placeholder-shown) ~ label,
-.bluemeem-contact-form-floating textarea:not(:placeholder-shown) ~ label,
-.bluemeem-contact-form-floating select:not(:placeholder-shown) ~ label {
-  top: 0;
-  font-size: 14px;
-  color: #2563eb;
-  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #212529;
+  font-size: 16px;
 }
 
 .bluemeem-contact-form-floating textarea {
   min-height: 150px;
   resize: vertical;
 }
+
+.bluemeem-contact-form-floating input:focus,
+.bluemeem-contact-form-floating select:focus,
+.bluemeem-contact-form-floating textarea:focus {
+  outline: none;
+  border-color: #4895ef;
+  box-shadow: 0 0 0 3px rgba(72, 149, 239, 0.2);
+}
+
+.bluemeem-contact-form-floating label {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  color: #6c757d;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.bluemeem-contact-form-floating input:focus ~ label,
+.bluemeem-contact-form-floating input:not(:placeholder-shown) ~ label,
+.bluemeem-contact-form-floating select:focus ~ label,
+.bluemeem-contact-form-floating select:not([value=""]):valid ~ label,
+.bluemeem-contact-form-floating textarea:focus ~ label,
+.bluemeem-contact-form-floating textarea:not(:placeholder-shown) ~ label {
+  top: -10px;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 5px;
+  background-color: white;
+  color: #4895ef;
+}
+
+.bluemeem-contact-btn {
+  background: linear-gradient(90deg, #4361ee, #3f37c9);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 6px rgba(67, 97, 238, 0.3);
+}
+
+.bluemeem-contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(67, 97, 238, 0.4);
+  background: linear-gradient(90deg, #3f37c9, #4361ee);
+}
+
+@media (max-width: 768px) {
+  .bluemeem-contact-form {
+      padding: 30px 20px;
+  }
+
+  .bluemeem-contact-form-floating {
+      margin-bottom: 20px;
+  }
+}
+
+/* Call to Action Section Styling */
+.bluemeem-contact-cta {
+  background: linear-gradient(135deg, #0056b3 0%, #003366 100%);
+  padding: 80px 0;
+  color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add subtle pattern overlay */
+.bluemeem-contact-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.bluemeem-contact-cta .container {
+  position: relative;
+  z-index: 2;
+}
+
+.bluemeem-contact-cta h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bluemeem-contact-cta .lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.bluemeem-contact-cta-btn {
+  background-color: #ffffff;
+  color: #0056b3;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.bluemeem-contact-cta-btn:hover {
+  background-color: #f8f9fa;
+  color: #004494;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bluemeem-contact-cta-btn i {
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .bluemeem-contact-cta {
+      padding: 60px 0;
+  }
+  
+  .bluemeem-contact-cta h2 {
+      font-size: 2rem;
+  }
+  
+  .bluemeem-contact-cta .lead {
+      font-size: 1.1rem;
+  }
+  
+  .bluemeem-contact-cta-btn {
+      padding: 10px 24px;
+      font-size: 0.9rem;
+  }
+  
+  .d-flex.justify-content-center.gap-3 {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .bluemeem-contact-cta-btn {
+      margin-bottom: 10px;
+      width: 80%;
+      max-width: 280px;
+  }
+}
+
+/* Animation for the CTA section */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.bluemeem-contact-cta {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.section-title:after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #4e6ef1;
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.card-title {
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.card-title i {
+  color: #4e6ef1;
+}
+
+.list-group-item {
+  border: none;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.list-group-item strong {
+  color: #2d3748;
+}
+
+.bluemeem-contact-input {
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+  transition: all 0.3s ease;
+}
+
+.bluemeem-contact-input:focus {
+  border-color: #4e6ef1;
+  box-shadow: 0 0 0 3px rgba(78, 110, 241, 0.15);
+}
+
+.bluemeem-contact-btn {
+  background-color: #4e6ef1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.bluemeem-contact-btn:hover {
+  background-color: #3a51be;
+  transform: translateY(-2px);
+}
+
+.text-primary {
+  color: #4e6ef1 !important;
+}
+
+.info-note {
+  font-size: 0.875rem;
+  border-left: 3px solid #4e6ef1;
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f6f9ff 0%, #f0f4ff 100%);
+}
+
+@media (max-width: 767.98px) {
+  .card {
+      margin-bottom: 1.5rem;
+  }
+}
+
+.social-section {
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+  padding: 5rem 0;
+  border-radius: 0;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.section-title:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #3498db;
+  margin: 0.8rem auto 0;
+}
+
+.section-subtitle {
+  color: #6c757d;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+}
+
+.social-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.social-card .card-inner {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.social-card .card-content h5 {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.social-card .card-content small {
+  font-size: 0.9rem;
+}
+
+/* Social specific colors */
+.facebook-icon {
+  background-color: rgba(59, 89, 152, 0.1);
+  color: #3b5998;
+}
+
+.instagram-icon {
+  background: rgba(225, 48, 108, 0.1);
+  color: #e1306c;
+}
+
+.threads-icon {
+  background: rgba(33, 33, 33, 0.1);
+  color: #212121;
+}
+
+.linkedin-icon {
+  background: rgba(0, 119, 181, 0.1);
+  color: #0077b5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .social-grid {
+      justify-content: center;
+  }
+  
+  .social-card {
+      width: 100%;
+      max-width: 320px;
+  }
+}
+
+.bluemeem-touch-section {
+  background: linear-gradient(to bottom, #e9ecef, #ffffff);
+  position: relative;
+  overflow: hidden;
+}
+
+.bluemeem-touch-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(248, 249, 250, 0.4) 0%, rgba(233, 236, 239, 0.6) 100%);
+  z-index: -1;
+}
+
+.bluemeem-contact-info-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.bluemeem-contact-info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.bluemeem-contact-info-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-size: 28px;
+  transition: all 0.3s ease;
+}
+
+.bluemeem-contact-info-card:hover .bluemeem-contact-info-icon {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #2980b9 0%, #1a5276 100%);
+}
+
+.bluemeem-contact-info-card h4 {
+  color: #2c3e50;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.bluemeem-contact-info-card p {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+/* Animation classes */
+@keyframes bluemeem-touch-fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.bluemeem-touch-animated {
+  animation: bluemeem-touch-fadeInUp 0.6s ease forwards;
+}
+
+.bluemeem-touch-delay-200 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.bluemeem-touch-delay-400 {
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+

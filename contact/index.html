@@ -126,23 +126,33 @@
       <div class="container">
           <div class="row align-items-center">
               <div class="col-lg-8 mx-auto text-center">
-                  <h1 class="animate__animated animate__fadeInUp">Get In Touch</h1>
-                  <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                  <h1 class="" data-animation="animate__fadeInUp">Get In Touch</h1>
+                  <p class="lead mb-4" data-animation="animate__fadeInUp">
                       Have a question or need a quote? We're here to help you bring your digital vision to life.
                   </p>
               </div>
           </div>
       </div>
     </section>
+    <!-- Hero Section End -->
 
     <!-- Contact Form Section -->
-    <section class="py-5">
+    <section class="bluemeem-contact-section py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <div class="bluemeem-contact-form">
+                    <div class="bluemeem-contact-form" data-animation="animate__fadeInUp">
                         <h3>Send Us A Message</h3>
-                        <form id="contactForm" action="#" method="post">
+                        <form id="contactForm" action="https://formsubmit.co/info.bluemeem@gmail.com" method="POST">
+                            
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_autoresponse" value="Thank you for contacting Bluemeem. We'll get back to you shortly.">
+                            <input type="hidden" name="_subject" value="New Contact Form Submission - Bluemeem">
+                            <input type="hidden" name="_next" value="https://bluemeem.com/contact/">
+                            <input type="text" name="_honey" style="display:none"> <!-- Honeypot field -->
+
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="bluemeem-contact-form-floating">
@@ -157,6 +167,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="bluemeem-contact-form-floating">
@@ -180,12 +191,14 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="bluemeem-contact-form-floating">
                                 <textarea name="message" id="message" placeholder=" " required></textarea>
                                 <label for="message">Your Message</label>
                             </div>
+
                             <div class="text-end">
-                                <button type="submit" class="bluemeem-contact-btn">
+                                <button type="submit" class="bluemeem-contact-btn" data-animation="animate__fadeInLeft">
                                     Send Message <i class="fas fa-paper-plane ms-2"></i>
                                 </button>
                             </div>
@@ -195,21 +208,22 @@
             </div>
         </div>
     </section>
+    <!-- Contact FOrm Section End -->
 
     <!-- Call to Action -->
     <section class="bluemeem-contact-cta">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="mb-3">Ready to Transform Your Digital Presence?</h2>
-                    <p class="lead mb-4">
+                    <h2 class="mb-3" data-animation="animate__fadeInDown">Ready to Transform Your Digital Presence?</h2>
+                    <p class="lead mb-4" data-animation="animate__fadeInUp">
                         Let's collaborate to bring your vision to life with our expertise in digital marketing, web development, and creative services.
                     </p>
-                    <div class="d-flex justify-content-center gap-3">
-                        <a href="tel:+919074919005" class="btn bluemeem-contact-cta-btn">
+                    <div class="cta-buttons d-flex justify-content-center gap-3">
+                        <a href="tel:+919074919005" class="btn bluemeem-contact-cta-btn" data-animation="animate__fadeInLeft">
                             <i class="fas fa-phone-alt me-2"></i> Call Now
                         </a>
-                        <a href="https://wa.me/919074919005" class="btn bluemeem-contact-cta-btn">
+                        <a href="https://wa.me/919074919005" class="btn bluemeem-contact-cta-btn" data-animation="animate__fadeInRight">
                             <i class="fab fa-whatsapp me-2"></i> WhatsApp
                         </a>
                     </div>
@@ -217,75 +231,114 @@
             </div>
         </div>
     </section>
+    <!-- Call to Action End -->
 
     <!-- Working Hours & Schedule a Call -->
-    <section class="py-5">
+    <section class="contact-section py-5" style="background: linear-gradient(to bottom, #e9ecef, #f8f9fa);">
         <div class="container">
+            <h2 class="section-title mb-5" data-animation="animate__fadeInDown">Get In Touch</h2>
             <div class="row g-4">
                 <!-- Working Hours -->
                 <div class="col-lg-6">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <h3 class="card-title mb-4"><i class="far fa-clock text-primary me-2"></i> Working Hours</h3>
+                    <div class="card border-0 h-100" data-animation="animate__fadeInLeft">
+                        <div class="card-body p-4 p-lg-5">
+                            <h3 class="card-title mb-4">
+                                <i class="far fa-clock text-primary me-2"></i> Working Hours
+                            </h3>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-between align-items-center px-0">
                                     <span><strong>Monday - Friday</strong></span>
-                                    <span>9:00 AM - 6:00 PM</span>
+                                    <span class="badge bg-primary rounded-pill py-2 px-3">9:00 AM - 6:00 PM</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center px-0">
                                     <span><strong>Saturday</strong></span>
-                                    <span>9:00 AM - 2:00 PM</span>
+                                    <span class="badge bg-primary rounded-pill py-2 px-3">9:00 AM - 2:00 PM</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center px-0">
                                     <span><strong>Sunday</strong></span>
-                                    <span>Closed</span>
+                                    <span class="badge bg-secondary rounded-pill py-2 px-3">Closed</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center px-0">
                                     <span><strong>Public Holidays</strong></span>
-                                    <span>Closed</span>
+                                    <span class="badge bg-secondary rounded-pill py-2 px-3">Closed</span>
                                 </li>
                             </ul>
-                            <p class="mt-4 mb-0 text-muted">
-                                <i class="fas fa-info-circle me-2"></i> Time zone varies by office location.
-                            </p>
+                            <div class="info-note">
+                                <i class="fas fa-info-circle me-2 text-primary"></i> Time zone varies by office location.
+                            </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Schedule a Call -->
                 <div class="col-lg-6">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <h3 class="card-title mb-4"><i class="fas fa-calendar-alt text-primary me-2"></i> Schedule a Call</h3>
+                    <div class="card border-0 h-100" data-animation="animate__fadeInRight">
+                        <div class="card-body p-4 p-lg-5">
+                            <h3 class="card-title mb-4">
+                                <i class="fas fa-calendar-alt text-primary me-2"></i> Schedule a Call
+                            </h3>
                             <p class="mb-4">
                                 Select a convenient time for a call with our experts to discuss your requirements in detail.
                             </p>
-                            <form>
+                            <form action="https://formsubmit.co/info.bluemeem@gmail.com" method="POST">
+                                <!-- FormSubmit Configuration -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_autoresponse" value="Thank you for scheduling a call with Bluemeem. We'll confirm shortly.">
+                                <input type="hidden" name="_subject" value="New Call Schedule Request - Bluemeem">
+                                <input type="hidden" name="_next" value="https://bluemeem.com/contact/">
+                                <input type="text" name="_honey" style="display:none"> <!-- Honeypot -->
+
                                 <div class="mb-3">
-                                    <input type="text" class="form-control bluemeem-contact-input" placeholder="Your Name" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-white border-end-0">
+                                            <i class="fas fa-user text-primary"></i>
+                                        </span>
+                                        <input type="text" name="name" class="form-control bluemeem-contact-input border-start-0" placeholder="Your Name" required>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
-                                    <input type="email" class="form-control bluemeem-contact-input" placeholder="Email Address" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-white border-end-0">
+                                            <i class="fas fa-envelope text-primary"></i>
+                                        </span>
+                                        <input type="email" name="email" class="form-control bluemeem-contact-input border-start-0" placeholder="Email Address" required>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
-                                    <input type="tel" class="form-control bluemeem-contact-input" placeholder="Phone Number" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-white border-end-0">
+                                            <i class="fas fa-phone text-primary"></i>
+                                        </span>
+                                        <input type="tel" name="phone" class="form-control bluemeem-contact-input border-start-0" placeholder="Phone Number" required>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
-                                    <input type="date" class="form-control bluemeem-contact-input" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-white border-end-0">
+                                            <i class="fas fa-calendar text-primary"></i>
+                                        </span>
+                                        <input type="date" name="preferred_date" class="form-control bluemeem-contact-input border-start-0" required>
+                                    </div>
                                 </div>
                                 <div class="mb-4">
-                                    <select class="form-control bluemeem-contact-input" required>
-                                        <option value="" selected disabled>Select Time Slot</option>
-                                        <option value="9-10">9:00 AM - 10:00 AM</option>
-                                        <option value="10-11">10:00 AM - 11:00 AM</option>
-                                        <option value="11-12">11:00 AM - 12:00 PM</option>
-                                        <option value="12-1">12:00 PM - 1:00 PM</option>
-                                        <option value="2-3">2:00 PM - 3:00 PM</option>
-                                        <option value="3-4">3:00 PM - 4:00 PM</option>
-                                        <option value="4-5">4:00 PM - 5:00 PM</option>
-                                    </select>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-white border-end-0">
+                                            <i class="fas fa-clock text-primary"></i>
+                                        </span>
+                                        <select name="time_slot" class="form-control bluemeem-contact-input border-start-0" required>
+                                            <option value="" selected disabled>Select Time Slot</option>
+                                            <option value="9-10">9:00 AM - 10:00 AM</option>
+                                            <option value="10-11">10:00 AM - 11:00 AM</option>
+                                            <option value="11-12">11:00 AM - 12:00 PM</option>
+                                            <option value="12-1">12:00 PM - 1:00 PM</option>
+                                            <option value="2-3">2:00 PM - 3:00 PM</option>
+                                            <option value="3-4">3:00 PM - 4:00 PM</option>
+                                            <option value="4-5">4:00 PM - 5:00 PM</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <button type="submit" class="bluemeem-contact-btn w-100">
+                                <button type="submit" class="bluemeem-contact-btn w-100" data-animation="animate__fadeInUp">
                                     Schedule Call <i class="fas fa-headset ms-2"></i>
                                 </button>
                             </form>
@@ -295,75 +348,97 @@
             </div>
         </div>
     </section>
+    <!-- Schedule a Call End -->
 
     <!-- Social Media Connect -->
-    <section class="py-5 bg-light">
+    <section class="social-section">
         <div class="container">
-            <div class="row mb-4">
-                <div class="col-lg-6 mx-auto text-center">
-                    <h2 class="mb-3">Connect With Us</h2>
-                    <p class="text-muted">Follow us on social media for the latest updates and insights</p>
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title" data-animation="animate__fadeInDown">Connect With Us</h2>
+                    <p class="section-subtitle" data-animation="animate__fadeInUp">Follow us on social media for the latest updates and insights</p>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="d-flex flex-wrap justify-content-center gap-4">
-                        <a href="https://www.facebook.com/profile.php?id=61568177747917" target="_blank" class="text-decoration-none">
-                            <div class="bluemeem-contact-social-card">
-                                <div class="d-flex align-items-center p-3 rounded bg-white shadow-sm">
-                                    <i class="fab fa-facebook fa-2x text-primary me-3"></i>
-                                    <div>
-                                        <h5 class="mb-0">Facebook</h5>
-                                        <small class="text-muted">Follow our page</small>
+            
+            <div class="row">
+                <div class="col-lg-10 mx-auto" data-animation="animate__fadeInUp">
+                    <div class="row social-grid">
+                        <div class="col-md-6 col-lg-3">
+                            <a href="https://www.facebook.com/profile.php?id=61568177747917" target="_blank" class="text-decoration-none">
+                                <div class="social-card">
+                                    <div class="card-inner">
+                                        <div class="social-icon facebook-icon">
+                                            <i class="fab fa-facebook-f fa-lg"></i>
+                                        </div>
+                                        <div class="card-content">
+                                            <h5>Facebook</h5>
+                                            <small class="text-muted">Follow our page</small>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="https://www.instagram.com/blue__meem/" target="_blank" class="text-decoration-none">
-                            <div class="bluemeem-contact-social-card">
-                                <div class="d-flex align-items-center p-3 rounded bg-white shadow-sm">
-                                    <i class="fab fa-instagram fa-2x text-danger me-3"></i>
-                                    <div>
-                                        <h5 class="mb-0">Instagram</h5>
-                                        <small class="text-muted">@blue__meem</small>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-3" data-animation="animate__fadeInUp">
+                            <a href="https://www.instagram.com/blue__meem/" target="_blank" class="text-decoration-none">
+                                <div class="social-card">
+                                    <div class="card-inner">
+                                        <div class="social-icon instagram-icon">
+                                            <i class="fab fa-instagram fa-lg"></i>
+                                        </div>
+                                        <div class="card-content">
+                                            <h5>Instagram</h5>
+                                            <small class="text-muted">@blue__meem</small>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="https://www.threads.net/@blue__meem" target="_blank" class="text-decoration-none">
-                            <div class="bluemeem-contact-social-card">
-                                <div class="d-flex align-items-center p-3 rounded bg-white shadow-sm">
-                                    <i class="fa-brands fa-threads fa-2x text-dark me-3"></i>
-                                    <div>
-                                        <h5 class="mb-0">Threads</h5>
-                                        <small class="text-muted">@blue__meem</small>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-3" data-animation="animate__fadeInUp">
+                            <a href="https://www.threads.net/@blue__meem" target="_blank" class="text-decoration-none">
+                                <div class="social-card">
+                                    <div class="card-inner">
+                                        <div class="social-icon threads-icon">
+                                            <i class="fa-brands fa-threads fa-lg"></i>
+                                        </div>
+                                        <div class="card-content">
+                                            <h5>Threads</h5>
+                                            <small class="text-muted">@blue__meem</small>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="https://www.linkedin.com/company/104976344" target="_blank" class="text-decoration-none">
-                            <div class="bluemeem-contact-social-card">
-                                <div class="d-flex align-items-center p-3 rounded bg-white shadow-sm">
-                                    <i class="fab fa-linkedin fa-2x text-primary me-3"></i>
-                                    <div>
-                                        <h5 class="mb-0">LinkedIn</h5>
-                                        <small class="text-muted">Blue Meem</small>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-3" data-animation="animate__fadeInUp">
+                            <a href="https://www.linkedin.com/company/104976344" target="_blank" class="text-decoration-none">
+                                <div class="social-card">
+                                    <div class="card-inner">
+                                        <div class="social-icon linkedin-icon">
+                                            <i class="fab fa-linkedin-in fa-lg"></i>
+                                        </div>
+                                        <div class="card-content">
+                                            <h5>LinkedIn</h5>
+                                            <small class="text-muted">Blue Meem</small>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Social Media Connect End -->
 
     <!-- Contact Info Cards -->
-    <section class="py-5 bg-light">
+    <section class="py-5 bluemeem-touch-section">
         <div class="container">
             <div class="row g-4">
-                <div class="col-md-4" data-animation="fadeInUp">
-                    <div class="bluemeem-contact-info-card">
+                <div class="col-md-4" data-animation="animate__fadeInUp">
+                    <div class="bluemeem-contact-info-card bluemeem-touch-animated">
                         <div class="bluemeem-contact-info-icon mx-auto">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
@@ -371,8 +446,8 @@
                         <p class="text-center mb-0">Dubai, Qatar & India</p>
                     </div>
                 </div>
-                <div class="col-md-4" data-animation="fadeInUp" data-animation-delay="200">
-                    <div class="bluemeem-contact-info-card">
+                <div class="col-md-4" data-animation="animate__fadeInUp">
+                    <div class="bluemeem-contact-info-card bluemeem-touch-animated bluemeem-touch-delay-200">
                         <div class="bluemeem-contact-info-icon mx-auto">
                             <i class="fas fa-phone-alt"></i>
                         </div>
@@ -381,8 +456,8 @@
                         <p class="text-center mb-0">+91 9633 82 7006</p>
                     </div>
                 </div>
-                <div class="col-md-4" data-animation="fadeInUp" data-animation-delay="400">
-                    <div class="bluemeem-contact-info-card">
+                <div class="col-md-4" data-animation="animate__fadeInUp">
+                    <div class="bluemeem-contact-info-card bluemeem-touch-animated bluemeem-touch-delay-400">
                         <div class="bluemeem-contact-info-icon mx-auto">
                             <i class="fas fa-envelope"></i>
                         </div>
@@ -393,13 +468,14 @@
             </div>
         </div>
     </section>
+    <!-- Contact Info Cards End -->
 
     <!-- Map Section -->
-    <section class="py-5 bg-light">
+    <section class="py-5">
         <div class="container">
-            <div class="row mb-5">
+            <div class="row mb-2">
                 <div class="col-lg-6 mx-auto text-center">
-                    <h2 class="h2 mb-3">Find Us On Map</h2>
+                    <h2 class="fw-bold text-primary mb-3">Find Us On Map</h2>
                     <p class="text-muted">Our global presence helps us serve you better</p>
                 </div>
             </div>
@@ -407,46 +483,13 @@
                 <div class="col-12">
                     <div class="bluemeem-contact-map-container">
                         <!-- Embed Google Maps -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.9411082481966!2d55.26966657533461!3d25.185804477705184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f682829c85c07%3A0xa5eda9fb3d87a317!2sBusiness%20Bay%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1683201465817!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31161.942006286114!2d74.96324402683875!3d12.500062666189834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba482155de6aad1%3A0x3a07d5464844020a!2sKasaragod%2C%20Kerala!5e0!3m2!1sen!2sin!4v1746713740497!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Quick Contact Form -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="h2 mb-4">Need Quick Assistance?</h2>
-                    <p class="mb-4">Fill out this simple form and our team will get back to you within 24 hours.</p>
-                    
-                    <form class="bluemeem-contact-quick-form">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control bluemeem-contact-input" placeholder="Your Name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control bluemeem-contact-input" placeholder="Email Address" required>
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control bluemeem-contact-input" rows="3" placeholder="Your Message" required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="bluemeem-contact-btn">
-                                    Get Quick Response
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-6">
-                    <img src="/api/placeholder/600/500" alt="Contact Support" class="img-fluid rounded-lg shadow-lg">
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Map Section End -->
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-5 mb-0">
@@ -476,28 +519,27 @@
     
             <!-- Contact Info -->
             <div class="col-lg-4 col-md-6 col-xxl-4">
-          <h3 class="h5 mb-4">Touch with Us</h3>
-          <ul class="list-unstyled">
-            <li class="mb-3 d-flex">
-              <i class="fas fa-home me-3"></i>
-              <span class="text-white-50">Dubai, Qatar & India</span>
-            </li>
-            <li class="mb-3 d-flex">
-              <i class="fas fa-phone me-3"></i>
-              <span class="text-white-50">+91 9074 91 9005</span>
-            </li>
-            <li class="mb-3 d-flex">
-              <i class="fas fa-phone me-3"></i>
-              <span class="text-white-50">+91 9633 82 7006</span>
-            </li>
-            <li class="mb-3 d-flex">
-              <i class="fas fa-envelope me-3"></i>
-              <span class="text-white-50">info.bluemeem@gmail.com</span>
-            </li>
-          </ul>
-        </div>
-    
-            <!-- Company Profile with Large Download Icon -->
+                <h3 class="h5 mb-4">Touch with Us</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-3 d-flex">
+                    <i class="fas fa-home me-3"></i>
+                    <span class="text-white-50">Dubai, Qatar & India</span>
+                    </li>
+                    <li class="mb-3 d-flex">
+                    <i class="fas fa-phone me-3"></i>
+                    <span class="text-white-50">+91 9074 91 9005</span>
+                    </li>
+                    <li class="mb-3 d-flex">
+                    <i class="fas fa-phone me-3"></i>
+                    <span class="text-white-50">+91 9633 82 7006</span>
+                    </li>
+                    <li class="mb-3 d-flex">
+                    <i class="fas fa-envelope me-3"></i>
+                    <span class="text-white-50">info.bluemeem@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+
             <!-- Company Profile with Social Media Links -->
             <div class="col-lg-3 col-md-6 col-xxl-3">
               <h3 class="h5 mb-4">Company Profile</h3>
