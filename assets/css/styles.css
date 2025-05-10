@@ -7916,7 +7916,7 @@ body {
 }
 
 .bm-gd-tools-section {
-  padding: 60px 0;
+  padding: 80px 0;
   position: relative;
   overflow: hidden;
 }
@@ -8038,3 +8038,208 @@ body {
 .delay-300 { transition-delay: 0.3s; }
 .delay-400 { transition-delay: 0.4s; }
 .delay-500 { transition-delay: 0.5s; }
+
+.bm-gd-faq-section {
+  background: linear-gradient(to bottom, #ffffff, #e0e7ff, #ffffff);
+}
+
+.bm-gd-faq-title {
+  font-size: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.bm-gd-faq-title:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--bs-primary);
+  margin: 0.5rem auto 0;
+}
+
+.bm-gd-faq-subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.bm-gd-faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bm-gd-faq-item {
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.bm-gd-faq-card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.bm-gd-faq-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.bm-gd-faq-header {
+  border: none;
+}
+
+.bm-gd-faq-button {
+  padding: 1.25rem;
+  background-color: white;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.bm-gd-faq-button:not(.collapsed) {
+  background-color: white;
+  color: var(--bs-primary);
+  box-shadow: none;
+}
+
+.bm-gd-faq-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.bm-gd-faq-button::after {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.bm-gd-faq-content {
+  padding: 1.25rem;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Fix for animate.css elements */
+[data-animation] {
+  opacity: 1 !important;
+}
+
+[data-animation].invisible {
+  animation-play-state: paused;
+}
+
+/* Add animation delay classes */
+@media (prefers-reduced-motion: no-preference) {
+  .bm-gd-faq-item {
+    opacity: 0;
+    animation-fill-mode: both;
+    animation-duration: 0.8s;
+  }
+  
+  .bm-gd-faq-item.animate__fadeInUp {
+    opacity: 1;
+  }
+}
+
+.bm-gd-cta-section {
+  background: linear-gradient(135deg, #0062cc, #258cfb);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 98, 204, 0.2);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.bm-gd-cta-section::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 0;
+}
+
+.bm-gd-cta-section::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  z-index: 0;
+}
+
+.bm-gd-cta-container {
+  position: relative;
+  z-index: 1;
+}
+
+.bm-gd-cta-heading {
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bm-gd-cta-text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+.bm-gd-cta-btn-primary {
+  padding: 12px 35px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.bm-gd-cta-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bm-gd-cta-btn-secondary {
+  padding: 12px 35px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+}
+
+.bm-gd-cta-btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bm-gd-cta-buttons {
+  gap: 20px;
+}
+
+/* Animation for appearance */
+.bm-gd-cta-animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes bm-gd-cta-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bm-gd-cta-fadeIn {
+  animation-name: bm-gd-cta-fadeIn;
+}
