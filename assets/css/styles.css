@@ -7805,3 +7805,236 @@ body {
     font-size: 1.75rem;
   }
 }
+
+.bm-gd-process-section {
+  overflow-x: hidden;
+}
+
+/* Title animations */
+.bm-gd-process-title {
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: bm-gd-process-fade-in 0.8s ease forwards;
+}
+
+.bm-gd-process-subtitle {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: bm-gd-process-fade-in 0.8s ease forwards 0.2s;
+}
+
+/* Process card container */
+.bm-gd-process-container {
+  position: relative;
+}
+
+/* Process cards */
+.bm-gd-process-card {
+  position: relative;
+  height: 100%;
+  border-radius: 16px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.bm-gd-process-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.bm-gd-process-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #4e73df, #36b9cc);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.bm-gd-process-card:hover:before {
+  transform: scaleX(1);
+}
+
+/* Number styling */
+.bm-gd-process-number {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4e73df, #36b9cc);
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.bm-gd-process-card:hover .bm-gd-process-number {
+  transform: scale(1.1) rotate(10deg);
+}
+
+/* Animations */
+@keyframes bm-gd-process-fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .bm-gd-process-card {
+    margin-bottom: 40px;
+  }
+  
+  .bm-gd-process-number {
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+/* Mobile optimization */
+@media (max-width: 575.98px) {
+  .bm-gd-process-card {
+    max-width: 90%;
+    margin: 0 auto 30px;
+  }
+}
+
+.bm-gd-tools-section {
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bm-gd-tools-heading {
+  color: #3b82f6;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.bm-gd-tools-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  border-radius: 2px;
+}
+
+.bm-gd-tools-subheading {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.bm-gd-tools-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bm-gd-tools-card::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.07) 0%, rgba(147, 197, 253, 0.07) 100%);
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.bm-gd-tools-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08);
+}
+
+.bm-gd-tools-card:hover::before {
+  top: 0;
+}
+
+.bm-gd-tools-icon-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bm-gd-tools-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.bm-gd-tools-card:hover .bm-gd-tools-icon {
+  transform: scale(1.15);
+}
+
+.bm-gd-tools-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #0f172a;
+}
+
+/* Animation Classes */
+.bm-gd-tools-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.bm-gd-tools-fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bm-gd-tools-scale-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.bm-gd-tools-scale-in.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Staggered animation delay */
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+.delay-500 { transition-delay: 0.5s; }
