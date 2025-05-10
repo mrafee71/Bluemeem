@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bluemeem | About</title>
+    <title>Bluemeem | Blogs</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -73,7 +73,6 @@
                       <ul class="dropdown-menu" aria-labelledby="developmentDropdown">
                           <li><a class="dropdown-item" href="/development/web-development/">Web Development</a></li>
                           <li><a class="dropdown-item" href="/development/ecommerce-web/">E-commerce Web Development</a></li>
-                          <li><a class="dropdown-item" href="/development/mobile-app/">Mobile App Development</a></li>
                       </ul>
                   </li>
                   
@@ -99,7 +98,6 @@
                           <li><a class="dropdown-item" href="/creative/graphic-design/">Graphic Design</a></li>
                           <li><a class="dropdown-item" href="/creative/company-profile-designing/">Company Profile Designing</a></li>
                           <li><a class="dropdown-item" href="/creative/content-writing/">Content Writing</a></li>
-                          <li><a class="dropdown-item" href="/creative/poster-design/">Social Media Posters Designs</a></li>
                       </ul>
                   </li>
                   
@@ -110,7 +108,7 @@
 
                   <!-- Careers -->
                   <li class="nav-item">
-                    <a class="nav-link" href="/blogs/">Careers</a>
+                    <a class="nav-link" href="/careers/">Careers</a>
                   </li>
                   
                   <!-- Contact -->
@@ -122,6 +120,217 @@
       </div>
     </nav>
     <!-- Navigation Bar End -->
+
+    <!-- Blog Hero Section -->
+    <section class="bm-blog-hero">
+        <div class="container">
+            <h1 class="bm-blog-hero-title" data-animation="animate__fadeInDown">Digital Insights & Industry Trends</h1>
+            <p class="bm-blog-hero-subtitle" data-animation="animate__fadeInUp">Stay updated with the latest in digital marketing, web development, and creative design</p>
+        </div>
+    </section>
+    <!-- Blog Hero Section End -->
+
+    <!-- Featured Posts Section -->
+    <section class="bm-blog-feature-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="text-center fw-bold mb-3 bm-blog-feature-title" data-animation="animate__fadeInDown">Featured Articles</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Featured Post 1 -->
+                <div class="col-lg-8 mb-4" data-animation="animate__fadeInUp">
+                    <a href="#" class="text-decoration-none">
+                        <div class="bm-blog-feature-card shadow">
+                            <img src="../assets/images/seo-strategy-2025.png" alt="SEO Strategies for 2025" class="bm-blog-feature-image">
+                            <div class="bm-blog-feature-overlay">
+                                <span class="bm-blog-feature-category">SEO</span>
+                                <span class="bm-blog-feature-date"><i class="far fa-calendar-alt me-2"></i>May 5, 2025</span>
+                                <h3 class="bm-blog-feature-headline">Effective SEO Strategies for 2025: What's Working Now</h3>
+                                <p class="bm-blog-feature-excerpt">Discover the latest search engine optimization techniques that are driving organic traffic in today's competitive digital landscape.</p>
+                                <span class="bm-blog-feature-read-more">Read Article <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="row">
+                        <!-- Featured Post 2 -->
+                        <div class="col-12 mb-4" data-animation="animate__fadeInUp">
+                            <a href="#" class="text-decoration-none">
+                                <div class="bm-blog-feature-card bm-blog-feature-card-sm shadow">
+                                    <img src="../assets/images/social-media-trends.png" alt="Social Media Trends" class="bm-blog-feature-image">
+                                    <div class="bm-blog-feature-overlay">
+                                        <span class="bm-blog-feature-category">Social Media</span>
+                                        <h3 class="bm-blog-feature-headline-sm">Social Media Trends Dominating 2025</h3>
+                                        <span class="bm-blog-feature-read-more">Read Article <i class="fas fa-arrow-right"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <!-- Featured Post 3 -->
+                        <div class="col-12" data-animation="animate__fadeInUp">
+                            <a href="#" class="text-decoration-none">
+                                <div class="bm-blog-feature-card bm-blog-feature-card-sm shadow">
+                                    <img src="../assets/images/ai-web-development.png" alt="AI in Web Development" class="bm-blog-feature-image">
+                                    <div class="bm-blog-feature-overlay">
+                                        <span class="bm-blog-feature-category">Web Development</span>
+                                        <h3 class="bm-blog-feature-headline-sm">How AI is Revolutionizing Web Development</h3>
+                                        <span class="bm-blog-feature-read-more">Read Article <i class="fas fa-arrow-right"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Posts Section End -->
+
+    <!-- Main Blog Content Section -->
+    <section class="pt-5 pb-5 bm-blogs-main">
+      <div class="container">
+        <!-- Filter Buttons -->
+        <div class="text-center mb-4 bm-blogs-main-header">
+          <h2 class="mb-3 bm-blogs-main-title" data-animation="animate__fadeInDown">Latest Blogs</h2>
+          <div class="d-flex flex-wrap justify-content-center gap-2 bm-blogs-main-filters" data-animation="animate__fadeInUp">
+            <button class="btn bluemeem-blog-filter-btn active bm-blogs-main-filter-btn" data-filter="All">All</button>
+            <button class="btn bluemeem-blog-filter-btn bm-blogs-main-filter-btn" data-filter="SEO">SEO</button>
+            <button class="btn bluemeem-blog-filter-btn bm-blogs-main-filter-btn" data-filter="Web Development">Web Development</button>
+            <button class="btn bluemeem-blog-filter-btn bm-blogs-main-filter-btn" data-filter="Content Writing">Content Writing</button>
+          </div>
+        </div>
+
+        <!-- Blog Cards -->
+        <div class="row" id="blogCardsContainer">
+          <!-- Card 1 -->
+          <div class="col-md-6 mb-4 bm-blogs-main-card-wrapper" data-animation="animate__fadeInUp" data-category="SEO">
+            <div class="card border-0 shadow-sm bm-blogs-main-card">
+              <div class="bm-blogs-main-img-container">
+                <img src="../assets/images/seo-traffic.png" class="card-img-top bm-blogs-main-img" alt="SEO Blog">
+              </div>
+              <div class="card-body bm-blogs-main-card-body">
+                <div class="bm-blogs-main-category">SEO</div>
+                <h5 class="card-title bm-blogs-main-card-title">Boost Your Traffic with SEO</h5>
+                <p class="card-text bm-blogs-main-card-text">Learn key SEO strategies to rank higher in search results and grow your business online.</p>
+                <a href="#" class="btn btn-primary bm-blogs-main-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 mb-4 bm-blogs-main-card-wrapper" data-animation="animate__fadeInUp" data-category="Web Development">
+            <div class="card border-0 shadow-sm bm-blogs-main-card">
+              <div class="bm-blogs-main-img-container">
+                <img src="../assets/images/mastering-reactjs.png" class="card-img-top bm-blogs-main-img" alt="Web Dev Blog">
+              </div>
+              <div class="card-body bm-blogs-main-card-body">
+                <div class="bm-blogs-main-category">Web Development</div>
+                <h5 class="card-title bm-blogs-main-card-title">Mastering React.js for Frontend</h5>
+                <p class="card-text bm-blogs-main-card-text">Explore powerful features of React.js and how it enhances frontend development.</p>
+                <a href="#" class="btn btn-primary bm-blogs-main-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 mb-4 bm-blogs-main-card-wrapper" data-animation="animate__fadeInUp" data-category="Content Writing">
+            <div class="card border-0 shadow-sm bm-blogs-main-card">
+              <div class="bm-blogs-main-img-container">
+                <img src="../assets/images/crafting-content.png" class="card-img-top bm-blogs-main-img" alt="Content Blog">
+              </div>
+              <div class="card-body bm-blogs-main-card-body">
+                <div class="bm-blogs-main-category">Content Writing</div>
+                <h5 class="card-title bm-blogs-main-card-title">Crafting Engaging Content</h5>
+                <p class="card-text bm-blogs-main-card-text">Tips and techniques to write compelling content that converts readers into customers.</p>
+                <a href="#" class="btn btn-primary bm-blogs-main-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 mb-4 bm-blogs-main-card-wrapper" data-animation="animate__fadeInUp" data-category="Web Development">
+            <div class="card border-0 shadow-sm bm-blogs-main-card">
+              <div class="bm-blogs-main-img-container">
+                <img src="../assets/images/js-performance.png" class="card-img-top bm-blogs-main-img" alt="JS Tips Blog">
+              </div>
+              <div class="card-body bm-blogs-main-card-body">
+                <div class="bm-blogs-main-category">Web Development</div>
+                <h5 class="card-title bm-blogs-main-card-title">JavaScript Performance Tips</h5>
+                <p class="card-text bm-blogs-main-card-text">Enhance your JS code with best practices that boost speed and maintainability.</p>
+                <a href="#" class="btn btn-primary bm-blogs-main-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main Blog Content Section End -->
+
+    <!-- Newsletter Section -->
+    <section class="bm-blog-newsletter">
+        <div class="container text-center">
+            <h2 class="mb-3 bm-blog-newsletter-title" data-animation="animate__fadeInDown">Join Our Newsletter</h2>
+            <p class="lead mb-4 bm-blog-newsletter-subtitle" data-animation="animate__fadeInUp">Get the latest digital marketing tips, trends, and strategies delivered straight to your inbox</p>
+            
+            <div class="bm-blog-newsletter-form-container" data-animation="animate__fadeInUp">
+                <form id="newsletterForm" action="https://formsubmit.co/ajax/info.bluemeem@gmail.com" method="POST" class="bm-blog-newsletter-form">
+                    <input type="email" name="email" class="form-control bm-blog-newsletter-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="bm-blog-newsletter-button">Subscribe</button>
+                    <span class="bm-blog-newsletter-message"></span>
+                    <!-- FormSubmit hidden fields -->
+                    <input type="hidden" name="_subject" value="New Newsletter Subscription">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+                
+                <script>
+                    document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        var form = this;
+                        var messageSpan = form.querySelector('.bm-blog-newsletter-message');
+                        var submitBtn = form.querySelector('.bm-blog-newsletter-button');
+                        
+                        // Show loading state
+                        submitBtn.disabled = true;
+                        submitBtn.innerHTML = 'Subscribing...';
+                        
+                        fetch(form.action, {
+                            method: 'POST',
+                            body: new FormData(form),
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.success) {
+                                messageSpan.innerHTML = 'Thank you for subscribing!';
+                                messageSpan.className = 'bm-blog-newsletter-message bm-blog-newsletter-success';
+                                form.reset();
+                            } else {
+                                messageSpan.innerHTML = 'Something went wrong. Please try again.';
+                                messageSpan.className = 'bm-blog-newsletter-message bm-blog-newsletter-error';
+                            }
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = 'Subscribe';
+                        })
+                        .catch(error => {
+                            messageSpan.innerHTML = 'An error occurred. Please try again later.';
+                            messageSpan.className = 'bm-blog-newsletter-message bm-blog-newsletter-error';
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = 'Subscribe';
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter Section End -->
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-5 mb-0">
@@ -237,6 +446,126 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- Whatsapp Icon -->
+    <a href="https://wa.me/919074919005" target="_blank" class="whatsapp-float animate__animated animate__pulse animate__infinite">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <!-- Filtering Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll('.bluemeem-blog-filter-btn');
+        const blogCards = document.querySelectorAll('[data-category]');
+
+        filterButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            // Highlight active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filter = button.getAttribute('data-filter');
+
+            blogCards.forEach(card => {
+              const category = card.getAttribute('data-category');
+              if (filter === "All" || category === filter) {
+                card.style.display = 'block';
+              } else {
+                card.style.display = 'none';
+              }
+            });
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          // For both click and hover functionality
+          const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+          
+          // Handle submenu dropdowns (specifically for Paid Advertisement)
+          const submenuLinks = document.querySelectorAll('.dropdown-submenu > a.dropdown-toggle');
+          
+          submenuLinks.forEach(link => {
+              // Click event for all devices
+              link.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  
+                  const submenu = this.nextElementSibling;
+                  const isOpen = submenu.classList.contains('show');
+                  
+                  // Close all submenus first
+                  document.querySelectorAll('.dropdown-submenu > .dropdown-menu').forEach(menu => {
+                      menu.classList.remove('show');
+                  });
+                  
+                  // Toggle current submenu
+                  if (!isOpen) {
+                      submenu.classList.add('show');
+                  }
+              });
+          });
+          
+          // Handle main dropdown menus for mobile
+          if (isTouchDevice) {
+              const mainDropdowns = document.querySelectorAll('.navbar-nav > .dropdown > .dropdown-toggle');
+              
+              mainDropdowns.forEach(dropdown => {
+                  dropdown.addEventListener('click', function(e) {
+                      if (window.innerWidth >= 992) {
+                          // For tablets and touch laptops in desktop view
+                          const hasClicked = this.getAttribute('data-clicked') === 'true';
+                          
+                          if (!hasClicked) {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              
+                              // Reset all dropdowns
+                              mainDropdowns.forEach(d => d.setAttribute('data-clicked', 'false'));
+                              
+                              // Mark this dropdown as clicked
+                              this.setAttribute('data-clicked', 'true');
+                          }
+                      }
+                  });
+              });
+              
+              // Reset clicked state when clicking elsewhere
+              document.addEventListener('click', function(e) {
+                  if (!e.target.closest('.dropdown')) {
+                      document.querySelectorAll('.dropdown-toggle').forEach(dropdown => {
+                          dropdown.setAttribute('data-clicked', 'false');
+                      });
+                  }
+              });
+          }
+          
+          // Close submenus when main dropdown is closed
+          document.querySelectorAll('.navbar-nav > .dropdown').forEach(dropdown => {
+              dropdown.addEventListener('hidden.bs.dropdown', function() {
+                  this.querySelectorAll('.dropdown-submenu > .dropdown-menu').forEach(submenu => {
+                      submenu.classList.remove('show');
+                  });
+                  
+                  // Reset clicked state
+                  this.querySelector('.dropdown-toggle').setAttribute('data-clicked', 'false');
+              });
+          });
+          
+          // Reset classes on window resize
+          window.addEventListener('resize', function() {
+              if (window.innerWidth >= 992) {
+                  document.querySelectorAll('.dropdown-submenu > .dropdown-menu.show').forEach(menu => {
+                      if (!menu.parentElement.querySelector('a').matches(':hover')) {
+                          menu.classList.remove('show');
+                      }
+                  });
+              }
+          });
+      });
+    </script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
