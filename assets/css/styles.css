@@ -8501,3 +8501,216 @@ body {
   }
 }
 
+.bm-cpd-process-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.bm-cpd-process-title {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.bm-cpd-process-divider {
+  margin-bottom: 25px;
+}
+
+.bm-cpd-process-divider .border-bottom {
+  width: 80px;
+  height: 3px;
+}
+
+.bm-cpd-process-intro {
+  color: #6c757d;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.bm-cpd-process-step {
+  position: relative;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.bm-cpd-process-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.bm-cpd-process-step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.bm-cpd-process-step-content {
+  padding-top: 5px;
+}
+
+.bm-cpd-process-step-title {
+  color: #3a4a5e;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.bm-cpd-process-step-text {
+  color: #6c757d;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Add connecting lines between steps */
+.bm-cpd-process-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 85px;
+  left: 30px;
+  height: 40px;
+  width: 2px;
+  background: linear-gradient(to bottom, #4b6cb7, transparent);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .bm-cpd-process-title {
+    font-size: 2rem;
+  }
+  
+  .bm-cpd-process-step {
+    padding: 20px 15px;
+  }
+  
+  .bm-cpd-process-step-number {
+    min-width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+  
+  .bm-cpd-process-step:not(:last-child)::after {
+    top: 75px;
+    height: 35px;
+  }
+}
+
+/* Company Profile Features Section CSS */
+
+/* Section header styles */
+.bm-cpd-feature-heading {
+  color: #2c3e50;
+  font-size: 2.25rem;
+  letter-spacing: -0.5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.bm-cpd-feature-divider {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #3498db, #2980b9);
+  transition: width 0.3s ease;
+}
+
+.bm-cpd-feature-intro {
+  color: #5d6d7e;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Feature cards styling */
+.bm-cpd-feature-card {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.bm-cpd-feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Feature icon styling */
+.bm-cpd-feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.bm-cpd-feature-icon i {
+  color: #ffffff;
+  font-size: 28px;
+}
+
+.bm-cpd-feature-card:hover .bm-cpd-feature-icon {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #2980b9, #1c6ca1);
+}
+
+/* Feature content styling */
+.bm-cpd-feature-title {
+  color: #2c3e50;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.bm-cpd-feature-card:hover .bm-cpd-feature-title {
+  color: #3498db;
+}
+
+.bm-cpd-feature-text {
+  color: #5d6d7e;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .bm-cpd-feature-heading {
+    font-size: 2rem;
+  }
+  
+  .bm-cpd-feature-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .bm-cpd-feature-icon i {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bm-cpd-feature-heading {
+    font-size: 1.75rem;
+  }
+  
+  .bm-cpd-feature-intro {
+    font-size: 1rem;
+  }
+}
