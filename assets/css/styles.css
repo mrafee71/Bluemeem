@@ -8243,3 +8243,122 @@ body {
 .bm-gd-cta-fadeIn {
   animation-name: bm-gd-cta-fadeIn;
 }
+
+
+/* Company Profile Design Page */
+.bm-cpd-what-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.bm-cpd-what-title {
+  color: #2c3e50;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.bm-cpd-what-divider {
+  transition: width 0.4s ease;
+  width: 80px !important;
+  background-color: #3498db;
+}
+
+.bm-cpd-what-divider-container:hover .bm-cpd-what-divider {
+  width: 120px !important;
+}
+
+.bm-cpd-what-intro {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #505b6b !important;
+}
+
+.bm-cpd-what-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bm-cpd-what-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+.bm-cpd-what-card-body {
+  position: relative;
+}
+
+.bm-cpd-what-card-title {
+  color: #2c3e50;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.bm-cpd-what-card-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #3498db;
+  transition: width 0.3s ease;
+}
+
+.bm-cpd-what-card:hover .bm-cpd-what-card-title:after {
+  width: 80px;
+}
+
+.bm-cpd-what-list-item {
+  padding: 8px 0;
+  transition: transform 0.2s ease;
+}
+
+.bm-cpd-what-list-item:hover {
+  transform: translateX(5px);
+}
+
+.bm-cpd-what-icon {
+  font-size: 1.1rem;
+  color: #3498db !important;
+  transition: transform 0.3s ease;
+}
+
+.bm-cpd-what-list-item:hover .bm-cpd-what-icon {
+  transform: scale(1.2);
+}
+
+.bm-cpd-what-list-content {
+  color: #505b6b;
+}
+
+.bm-cpd-what-list-content strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Animation classes */
+.bm-cpd-what-section [data-animation] {
+  opacity: 0;
+}
+
+.bm-cpd-what-section [data-animation].animate__fadeInUp,
+.bm-cpd-what-section [data-animation].animate__fadeInLeft,
+.bm-cpd-what-section [data-animation].animate__fadeInRight {
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .bm-cpd-what-intro {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .bm-cpd-what-card {
+    margin-bottom: 20px;
+  }
+}
