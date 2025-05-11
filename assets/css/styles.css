@@ -8362,3 +8362,142 @@ body {
     margin-bottom: 20px;
   }
 }
+
+
+.bm-company-service-section {
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.bm-company-service-title {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.bm-company-service-divider {
+  width: 80px;
+  height: 3px;
+  background-color: #3498db;
+  transition: width 0.3s ease;
+}
+
+.bm-company-service-intro {
+  color: #5d6778;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bm-company-service-item {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.bm-company-service-item:hover {
+  transform: translateY(-10px);
+}
+
+.bm-company-service-box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.bm-company-service-box:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bm-company-service-box:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: #3498db;
+  transition: width 0.3s ease;
+  z-index: 2;
+}
+
+.bm-company-service-box:hover:before {
+  width: 100%;
+}
+
+.bm-company-service-icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(52, 152, 219, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.bm-company-service-box:hover .bm-company-service-icon {
+  background-color: #3498db;
+  transform: scale(1.1);
+}
+
+.bm-company-service-icon i {
+  font-size: 28px;
+  color: #3498db;
+  transition: all 0.3s ease;
+}
+
+.bm-company-service-box:hover .bm-company-service-icon i {
+  color: #ffffff;
+}
+
+.bm-company-service-name {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.bm-company-service-box:hover .bm-company-service-name {
+  color: #3498db;
+}
+
+.bm-company-service-desc {
+  color: #5d6778;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Animation classes for visibility */
+.bm-company-service-section [data-animation] {
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .bm-company-service-title {
+    font-size: 2.2rem;
+  }
+  
+  .bm-company-service-intro {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .bm-company-service-title {
+    font-size: 1.8rem;
+  }
+  
+  .bm-company-service-item {
+    margin-bottom: 20px;
+  }
+}
+
